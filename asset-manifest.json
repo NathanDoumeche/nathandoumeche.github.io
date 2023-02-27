@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c3954df5.css",
+    "main.js": "/static/js/main.c3d59bf5.js",
+    "static/js/787.745a6537.chunk.js": "/static/js/787.745a6537.chunk.js",
+    "static/media/nathou.jpeg": "/static/media/nathou.b74670337d2409983638.jpeg",
+    "static/media/sql.svg": "/static/media/sql.3df7b3c65180efc3b672b26b9391beab.svg",
+    "static/media/aws.svg": "/static/media/aws.e0fbd9d4a634b9768b8f86e34ad8e653.svg",
+    "static/media/linux.svg": "/static/media/linux.34c9ff73a5e385a4428dda4d536c4922.svg",
+    "static/media/react.svg": "/static/media/react.9342c38419495e33d129b6e97166cd00.svg",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/docker.svg": "/static/media/docker.c49ffb5c2e6d11bfae9683eefe8cdedc.svg",
+    "static/media/java.svg": "/static/media/java.5386b56c3206b6bd70b1053534d73dc3.svg",
+    "static/media/python.svg": "/static/media/python.026a62687ef705a39cfc755d7457859c.svg",
+    "static/media/git.svg": "/static/media/git.43d387b77657117c0e407816cbf72476.svg",
+    "index.html": "/index.html",
+    "static/media/typescript.svg": "/static/media/typescript.f20748caf2dac55710ddeed71de0bac4.svg",
+    "main.c3954df5.css.map": "/static/css/main.c3954df5.css.map",
+    "main.c3d59bf5.js.map": "/static/js/main.c3d59bf5.js.map",
+    "787.745a6537.chunk.js.map": "/static/js/787.745a6537.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3954df5.css",
+    "static/js/main.c3d59bf5.js"
+  ]
+}
