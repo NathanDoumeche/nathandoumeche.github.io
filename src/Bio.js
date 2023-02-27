@@ -72,18 +72,18 @@ function Bio() {
             className="app-logo"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/alexis-thomas11/"
+            href="https://www.linkedin.com/in/nathan-doumeche/"
           >
             <SiLinkedin size={30} />
           </a>
-          <a
+          {/*<a
             className="app-logo"
             target="_blank"
             rel="noopener noreferrer"
             href=""
           >
             <SiGooglescholar size={30} />
-          </a>
+  </a>*/}
           <a
             className="app-logo"
             target="_blank"
@@ -96,19 +96,19 @@ function Bio() {
             className="app-logo"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/Elial111"
+            href="https://github.com/NathanDoumeche"
           >
             <SiGithub size={30} />
           </a>
 
-          <a
+          {/*<a
             className="app-logo"
             target="_blank"
             rel="noopener noreferrer"
             href=""
           >
             <SiGitlab size={30} />
-          </a>
+</a>*/}
         </div>
       </div>
     </div>

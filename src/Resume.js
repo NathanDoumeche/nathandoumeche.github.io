@@ -92,7 +92,7 @@ function Resume() {
         "Linear Programming in Python (CBC).",
         "Supervisor : Olivier de Guibert.",
       ],
-      logo: "bmw.png",
+      logo: "mte.jpeg",
     },
     {
       name: "Sorbonne Université",
@@ -102,60 +102,81 @@ function Resume() {
         "Research scientist in Machine Learning applied to forecasting the French electricity load",
         "Supervised by Gérard Biau and co-supervised by Adeline Fermanian and Pierre Marion.",
       ],
-      logo: "edf.png",
+      logo: "su.jpeg",
     },
     {
       name: "Princeton University",
       job: "Visiting Student Research Collaborator in Statistical Physics and machine learning",
-      date: "june. 2020 - dec. 2020 (4 months)",
+      date: "june 2020 - dec. 2020 (4 months)",
       description: [
         "Study of Machine Learning kernels (NNGP and NTK for Self-Attention).",
         "Programming in Python (Keras).",
         "Supervised by Tankut Can and Kamesh Krishnamurthy.",
       ],
 
-      logo: "aws.jpeg",
+      logo: "princeton.jpeg",
+    },
+    {
+      name: "Laboratory Kastler Brossel",
+      job: "Research Internship in statistics applied to quantum physics",
+      date: "feb. 2019 - jul. 2020 (4 months)",
+      description: [
+        " Research team: Quantum fluctuations and special relativity",
+        "Measure of the gravitationnal mass of anti-hydrogen atoms (GBAR Project)",
+        "Programming statistical models in Python.",
+        "Advisor : Serge Reynaud",
+      ],
+
+      logo: "lkb.jpeg",
     },
   ];
 
   let formations = [
     {
-      name: "Mines Paris",
-      date: "janv. 2018 - sept. 2022",
+      name: "PhD at Sorbonne Université",
+      date: "sept. 2022 - dec. 2025",
+      description: "PhD in Statistics",
+      logo: "su.jpeg",
+    },
+    {
+      name: "Mines Paris graduate degree",
+      date: "sept. 2021 - sept. 2022",
       description:
         "Master's Degree in Science and Executive Engineering, Computer Science",
       logo: "mines.png",
     },
     {
-      name: "ULM",
-      date: "janv. 2018 - sept. 2022",
-      description:
-        "Master's Degree in Science and Executive Engineering, Computer Science",
+      name: "ENS ULM graduate degree in Mathematics",
+      date: "sept. 2018 - sept. 2022",
+      description: "Master's Degree in Mathematics",
       logo: "ulm.jpg",
     },
     {
-      name: "LLG",
-      date: "janv. 2018 - sept. 2022",
-      description:
-        "Master's Degree in Science and Executive Engineering, Computer Science",
-      logo: "llg.jpg",
+      name: "ENS ULM graduate degree in Physics",
+      date: "sept. 2018 - sept. 2022",
+      description: "Master's Degree in Physics",
+      logo: "ulm.jpg",
     },
     {
-      name: "SL",
-      date: "janv. 2018 - sept. 2022",
-      description:
-        "Master's Degree in Science and Executive Engineering, Computer Science",
-      logo: "saint_louis.webp",
+      name: "Prep school at Lycée Louis-Le-Grand",
+      date: "sept. 2016 - sept. 2018",
+      description: "MPSI-MP*",
+      logo: "llg.jpg",
     },
   ];
 
   let certificates = [
     {
-      name: "AWS Certified Solutions Architect - Associate",
-      date: "feb. 2023",
-      description:
-        "Certifies the ability to strategically design well-architected distributed systems that are scalable, resilient, efficient, and fault-tolerant.",
-      logo: "aws_certificate.png",
+      name: "DELE C1 in Spanish",
+      date: "aug. 2022",
+      description: "Life-long certificate of advanced abilities in Spanish.",
+      logo: "dele.jpeg",
+    },
+    {
+      name: "Cambridge Advanced Exam, C2 in English",
+      date: "aug. 2022",
+      description: "Most advanced life-long certificate in English.",
+      logo: "cae.jpeg",
     },
   ];
 
@@ -191,6 +212,7 @@ function Resume() {
       <Timeline.Item
         lineVariant="dotted"
         bulletSize={w > 480 ? 70 : 60}
+        radius="md"
         bullet={<Logo src={experience.logo} />}
         title={<CustomTitle text={experience.name} />}
       >
@@ -238,8 +260,8 @@ function Resume() {
         <img
           src={props.src}
           style={{
-            width: `${w > 480 ? "4em" : "3.5em"}`,
-            height: `${w > 480 ? "4em" : "3.5em"}`,
+            width: `${w > 480 ? "4.5em" : "4em"}`,
+            height: `${w > 480 ? "4.5em" : "4em"}`,
           }}
           className="resume-img"
         />
@@ -285,7 +307,7 @@ function Resume() {
         order={1}
         className="section-container"
       >
-        Certificate
+        Certificates
       </Title>
       <Timeline
         color="gray"
@@ -295,7 +317,7 @@ function Resume() {
       >
         {certificates_timelines}
       </Timeline>
-      <div className="skills-container">
+      {/*<div className="skills-container">
         <div className="skills-title">Skills</div>
 
         <div class="skills">
@@ -307,7 +329,7 @@ function Resume() {
             />
           ))}
         </div>
-      </div>
+          </div>*/}
     </div>
   );
 }
