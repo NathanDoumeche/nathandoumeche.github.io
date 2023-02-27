@@ -15,22 +15,13 @@ function Banner(props) {
   let w = document.documentElement.clientWidth || window.innerWidth;
   let mobile = w > 480 ? false : true;
 
-  const icons = [
-    IconHome,
-    IconSchool,
-    IconNews,
-    IconArticle,
-    IconAward,
-    IconAddressBook,
-  ];
+  const icons = [IconHome, IconNews, IconSchool, IconAward];
 
   let pages = [
     { name: "Home", path: "/" },
-    { name: "Resume", path: "/resume" },
     { name: "Research & teaching", path: "/research" },
-    { name: "Articles", path: "/articles" },
+    { name: "Resume", path: "/resume" },
     { name: "Awards", path: "/awards" },
-    { name: "Contact", path: "/contact" },
   ];
 
   const location = useLocation();
@@ -40,13 +31,6 @@ function Banner(props) {
       {pages.map((page) => {
         const Icon = icons[pages.indexOf(page)];
         return (
-          //  <Link
-          //     style={{ textDecoration: "none" }}
-          //     to={page.path}
-          //     onClick={() => props.close()}
-          //   >
-          //     <div className="banner-button">{page.name}</div>
-          //   </Link>
           <Link
             onClick={() => {
               if (mobile) {

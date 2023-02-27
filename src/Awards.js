@@ -46,7 +46,7 @@ function Awards() {
 
   return (
     <div className="research">
-      <Title style={{ paddingBottom: "1em" }} order={1}>
+      <Title style={{ paddingBottom: "0.5em" }} order={1}>
         Awards
       </Title>
       {awards.map((article) => (

@@ -62,7 +62,7 @@ function Research() {
         />
       ))}*/}
 
-      <Title style={{ paddingTop: "1em", paddingBottom: "1em" }} order={1}>
+      <Title style={{ paddingBottom: "0.5em" }} order={1}>
         Talks
       </Title>
       {talks.map((talk) => (
@@ -76,7 +76,7 @@ function Research() {
         />
       ))}
 
-      <Title style={{ paddingTop: "1em", paddingBottom: "1em" }} order={1}>
+      <Title style={{ paddingTop: "0.5em", paddingBottom: "0.5em" }} order={1}>
         Teaching
       </Title>
       {lectures.map((lecture) => (

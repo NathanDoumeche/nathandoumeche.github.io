@@ -68,7 +68,7 @@ function App() {
               <Routes>
                 <Route exact path="/" element={<Bio />} />
                 <Route path="/research" element={<Research />} />
-                <Route path="/articles" element={<Articles />} />
+                {/*<Route path="/articles" element={<Articles />} />*/}
                 <Route path="/awards" element={<Awards />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/resume" element={<Resume />} />

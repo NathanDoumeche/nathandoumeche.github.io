@@ -1,58 +1,117 @@
 import { Timeline, Text, Title, Avatar, List, Spoiler } from "@mantine/core";
+import { ReactComponent as Python } from "./assets/python.svg";
+import { ReactComponent as React } from "./assets/react.svg";
+import { ReactComponent as AWS } from "./assets/aws.svg";
+import { ReactComponent as Docker } from "./assets/docker.svg";
+import { ReactComponent as Git } from "./assets/git.svg";
+import { ReactComponent as Linux } from "./assets/linux.svg";
+import { ReactComponent as SQL } from "./assets/sql.svg";
+import { ReactComponent as TypeScript } from "./assets/typescript.svg";
+import { ReactComponent as Java } from "./assets/java.svg";
+
+const icons = [Python, React, AWS, Docker, Git, Linux, SQL, TypeScript, Java];
+
+let skills = [
+  {
+    name: "Python",
+  },
+  {
+    name: "react.js",
+  },
+  {
+    name: "AWS",
+  },
+  {
+    name: "Docker",
+  },
+  {
+    name: "Git",
+  },
+  {
+    name: "Linux",
+  },
+  {
+    name: "SQL",
+  },
+  {
+    name: "TypeScript",
+  },
+  {
+    name: "Java",
+  },
+];
 
 var w = document.documentElement.clientWidth || window.innerWidth;
+
+function Skill(props) {
+  const Icon = icons[props.id];
+  return (
+    <div className="skill">
+      <Icon height={40} width={40} />
+      {/* <div className="skill-name">{props.name}</div> */}
+      <Text
+        fz="sm"
+        c="dimmed"
+        variant="gradient"
+        gradient={{ from: "indigo.4", to: "cyan.2", deg: 45 }}
+      >
+        {props.name}
+      </Text>
+    </div>
+  );
+}
 
 function Resume() {
   let experiences = [
     {
-      name: "Amazon",
-      job: "Software Development Engineer",
-      date: "since march. 2022",
-      logo: "amazon.png",
+      name: "EDF R&D",
+      job: "Research Scientist in machine learning",
+      date: "sept. 2022 - dec. 2025",
+      logo: "edf.png",
       description: [
-        "As the only Software Development Engineer of a research team I own the subjects related to architecture, development and engineering.",
-        "I develop various tools related to input processing, data pipelines & automated deployments.",
-        "I am building CI/CD workflows to deploy operational research models on scalable architectures using serverless cloud technologies & containerization.",
-        "Stack: ...",
+        "Research and developpment of forecasting algorithms for the French electricity load.",
+        "Intensive use of Python, R, Bash, Git, and Docker to build and deploy machine learning based programs.",
+        "Supervised by Yannig Goude and co-supervised by Yann Allioux and Sandra Claudel.",
+        "Participation to the Smarter Mobility Data Challenge (see Awards).",
       ],
       steps: [
         {
-          date: "march. 2022 - june. 2022",
-          job: "Software Development Engineer Intern",
-          description: [
-            "Responsible for all the technical aspects of the team.",
-            "I design, implement and maintain software and the AWS infrastructure in order to provide technologies to accelerate and simplify how the team and its stakeholders can understand the European delivery speed.",
-            "One of our main products is a Data visualization platform with hundreds of internal users which includes operational research models, automated reporting, Data pipelines and Big Data processing.",
-          ],
+          date: "march. 2022 - sept. 2022 (6 months)",
+          job: "Research Scientist trainee in machine learning",
+          description: [],
         },
       ],
     },
     {
-      name: "BMW",
-      job: "Finance Project Manager",
-      date: "feb. 2022 - july. 2021",
+      name: "French Ministry of the Ecological Transition",
+      job: "Internship in the French administration : modelling the electricity sector",
+      date: "oct. 2021 - march 2022 (5 months)",
       description: [
-        "Framing of projects with the project managers and monitoring of their progress until their completion.",
-        "Financial and human resources estimates as well as risks and opportunities for the entire BMW France project portfolio.",
+        "Modelling of the best investments strategy to reduce carbone emissions.",
+        "Specialised in the electricity sector.",
+        "Linear Programming in Python (CBC).",
+        "Supervisor : Olivier de Guibert.",
       ],
       logo: "bmw.png",
     },
     {
-      name: "EDF R&D",
-      job: "Research Scientist",
-      date: "sept. 2022 - dec. 2025",
-      description:
+      name: "Sorbonne Université",
+      job: "Research Internship in Probability and machine learning",
+      date: "april 2021 - aug. 2021 (4 months)",
+      description: [
         "Research scientist in Machine Learning applied to forecasting the French electricity load",
+        "Supervised by Gérard Biau and co-supervised by Adeline Fermanian and Pierre Marion.",
+      ],
       logo: "edf.png",
     },
     {
-      name: "Amazon Web Services",
-      job: "Software Development Engineer Intern",
-      date: "june. 2020 - dec. 2020",
+      name: "Princeton University",
+      job: "Visiting Student Research Collaborator in Statistical Physics and machine learning",
+      date: "june. 2020 - dec. 2020 (4 months)",
       description: [
-        "Creation of a new service allowing our customers to change configuration of other internal tools at runtime.",
-        "Responsible for the full project: scope, design, implementation and testing.",
-        "Development of a Java backend and a React frontend.",
+        "Study of Machine Learning kernels (NNGP and NTK for Self-Attention).",
+        "Programming in Python (Keras).",
+        "Supervised by Tankut Can and Kamesh Krishnamurthy.",
       ],
 
       logo: "aws.jpeg",
@@ -190,11 +249,13 @@ function Resume() {
 
   return (
     <div className="resume">
-      <div style={{ paddingBottom: "1.5em" }}>
-        <Text size={30} weight={700} color="" className="section-container">
-          Work experience
-        </Text>
-      </div>
+      <Title
+        style={{ paddingBottom: "0.5em" }}
+        order={1}
+        className="section-container"
+      >
+        Work experience
+      </Title>
       <Timeline
         color="gray"
         active={4}
@@ -203,11 +264,13 @@ function Resume() {
       >
         {experiences_timelines}
       </Timeline>
-      <div style={{ paddingBottom: "1.5em", paddingTop: "1.5em" }}>
-        <Text size={30} weight={700} color="" className="section-container">
-          Education
-        </Text>
-      </div>
+      <Title
+        style={{ paddingTop: "0.5em", paddingBottom: "0.5em" }}
+        order={1}
+        className="section-container"
+      >
+        Education
+      </Title>
       <Timeline
         color="gray"
         active={4}
@@ -216,11 +279,14 @@ function Resume() {
       >
         {formation_timelines}
       </Timeline>
-      <div style={{ paddingBottom: "1.5em", paddingTop: "1.5em" }}>
-        <Text size={30} weight={700} color="" className="section-container">
-          Certificates
-        </Text>
-      </div>
+      <div style={{}}></div>
+      <Title
+        style={{ paddingTop: "0.5em", paddingBottom: "0.5em" }}
+        order={1}
+        className="section-container"
+      >
+        Certificate
+      </Title>
       <Timeline
         color="gray"
         active={4}
@@ -229,6 +295,19 @@ function Resume() {
       >
         {certificates_timelines}
       </Timeline>
+      <div className="skills-container">
+        <div className="skills-title">Skills</div>
+
+        <div class="skills">
+          {skills.map((skill) => (
+            <Skill
+              name={skill.name}
+              logo={skill.logo}
+              id={skills.indexOf(skill)}
+            />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
@@ -247,7 +326,7 @@ function ItemText(props) {
         {props.date}
       </Text>
       <Spoiler
-        maxHeight={props.spoiler && w < 480 ? 0 : 120}
+        maxHeight={props.spoiler && w < 480 ? 0 : 60}
         showLabel="Show more"
         hideLabel="Hide"
       >
