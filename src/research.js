@@ -35,6 +35,7 @@ function Research() {
       conf: "GDR TRAG - Signatures and rough paths for machine learning",
       place: "Institut Henri Poincaré - Paris- France",
       link: "https://young-trag-2021.sciencesconf.org/",
+      pdf: "https://drive.google.com/file/d/1EeZUqUpXRPFzwyK3KVJh4o4DW2O65XHc/view?usp=sharing",
     },
   ];
 
