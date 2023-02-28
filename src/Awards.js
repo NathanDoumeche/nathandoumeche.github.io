@@ -12,7 +12,8 @@ function Awards() {
       date: "2022",
       rank: "Rank 3",
       description:
-        "International data challenge on electric vehicules load forecasting organised by the Manifeste IA" +
+        "I teamed with Alexis Thomas in this " +
+        "international data challenge on electric vehicules load forecasting organised by the Manifeste IA" +
         " network of 16 French industrials and the TAILOR european project on the scientific foundations for trustworthy AI.",
       github: "https://github.com/NathanDoumeche/Smart_mobility_challenge",
     },

@@ -25,7 +25,7 @@ function Bio() {
         <div className="bio-paragraph">
           Hello and welcome to my personal website! Here you will find out more
           about my research and my background. I am currently a PhD student in
-          Statistics applied to machine learning under the supervision of Gérard
+          statistics applied to machine learning under the supervision of Gérard
           Biau at Sorbonne Université and Yannig Goude at EDF Lab Paris Saclay.
           I am also co-supervised by Yann Allioux, Claire Boyer and Sandra
           Claudel.
@@ -38,23 +38,23 @@ function Bio() {
         </Title>
         <div className="bio-paragraph">
           Passionate about the links between theory and practice in science, my
-          research focuses both on the theoretical foundations of machine
-          learning and on its applications to the energy sector. Hopefully, it
-          will go a small step towards understanding artificial intelligence and
-          enhancing our everyday lives.
+          research focuses both on both the theoretical foundations of machine
+          learning and its applications to the energy sector. Hopefully, it will
+          be a small step towards understanding artificial intelligence and
+          improving our daily lives.
         </div>
         <div className="bio-paragraph" style={{ paddingTop: "1em" }}>
           With Gérard Biau and Claire Boyer, I investigate the theoretical
           properties of Physics-Informed Neural Networks (PINNs). These
-          algorithms are very exciting since they reconcile the performant
+          algorithms are very exciting because they combine the powerful
           data-driven technologies of machine learning with the interpretability
-          of Physics modeling.
+          of physics modeling.
         </div>
         <div className="bio-paragraph" style={{ paddingTop: "1em" }}>
-          With Yann Allioux, Yannig Goude, and Sandra Claudel I am looking into
-          developping new forecasting algorithms to anticipate the French
-          electric needs. This helps the EDF company to produce electricity at
-          the right time and to act efficiently on the energy markets.
+          With Yann Allioux, Yannig Goude, and Sandra Claudel, I am working to
+          develop new forecasting algorithms to predict the French electricity
+          demand. This helps the EDF company to produce electricity at the right
+          time and to act efficiently on the energy markets.
         </div>
         <Title
           style={{ paddingTop: "0.5em", paddingBottom: "0.5em" }}

@@ -133,34 +133,39 @@ function Resume() {
 
   let formations = [
     {
-      name: "PhD at Sorbonne Université",
+      name: "PhD in Statistics at Sorbonne Université",
       date: "sept. 2022 - dec. 2025",
-      description: "PhD in Statistics",
+      description: "",
       logo: "su.jpeg",
     },
     {
-      name: "Mines Paris graduate degree",
+      name: "Mines Paris graduate degree (Double degree)",
       date: "sept. 2021 - sept. 2022",
-      description:
-        "Master's Degree in Science and Executive Engineering, Computer Science",
+      description: "",
       logo: "mines.png",
     },
     {
-      name: "ENS ULM graduate degree in Mathematics",
+      name: "ENS Ulm (PSL University) graduate degree in Mathematics",
       date: "sept. 2018 - sept. 2022",
-      description: "Master's Degree in Mathematics",
+      description: "",
       logo: "ulm.jpg",
     },
     {
-      name: "ENS ULM graduate degree in Physics",
+      name: "ENS Ulm (PSL University) graduate degree in Physics",
       date: "sept. 2018 - sept. 2022",
-      description: "Master's Degree in Physics",
+      description: "",
       logo: "ulm.jpg",
     },
     {
-      name: "Prep school at Lycée Louis-Le-Grand",
+      name: "Sorbonne Université Master's Degree in Probability",
+      date: "sept. 2020 - sept. 2021",
+      description: "",
+      logo: "su.jpeg",
+    },
+    {
+      name: "Prep school (MPSI-MP*) at Lycée Louis-Le-Grand",
       date: "sept. 2016 - sept. 2018",
-      description: "MPSI-MP*",
+      description: "",
       logo: "llg.jpg",
     },
   ];
@@ -169,13 +174,13 @@ function Resume() {
     {
       name: "DELE C1 in Spanish",
       date: "aug. 2022",
-      description: "Life-long certificate of advanced abilities in Spanish.",
+      description: "Lifelong certificate of advanced proficiency in Spanish.",
       logo: "dele.jpeg",
     },
     {
       name: "Cambridge Advanced Exam, C2 in English",
       date: "aug. 2022",
-      description: "Most advanced life-long certificate in English.",
+      description: "The most advanced lifelong certificate in English.",
       logo: "cae.jpeg",
     },
   ];
