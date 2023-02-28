@@ -1,5 +1,6 @@
-import { Timeline, Text, Title, Avatar, List, Spoiler } from "@mantine/core";
-import { ReactComponent as Python } from "./assets/python.svg";
+import { Timeline, Text, Title, Spoiler } from "@mantine/core";
+
+/*import { ReactComponent as Python } from "./assets/python.svg";
 import { ReactComponent as React } from "./assets/react.svg";
 import { ReactComponent as AWS } from "./assets/aws.svg";
 import { ReactComponent as Docker } from "./assets/docker.svg";
@@ -39,16 +40,15 @@ let skills = [
   {
     name: "Java",
   },
-];
+];*/
 
 var w = document.documentElement.clientWidth || window.innerWidth;
 
-function Skill(props) {
+/*function Skill(props) {
   const Icon = icons[props.id];
   return (
     <div className="skill">
       <Icon height={40} width={40} />
-      {/* <div className="skill-name">{props.name}</div> */}
       <Text
         fz="sm"
         c="dimmed"
@@ -59,20 +59,20 @@ function Skill(props) {
       </Text>
     </div>
   );
-}
+}*/
 
 function Resume() {
   let experiences = [
     {
       name: "EDF R&D",
-      job: "Research Scientist in machine learning",
+      job: "Research scientist in machine learning",
       date: "sept. 2022 - dec. 2025",
       logo: "edf.png",
       description: [
-        "Research and developpment of forecasting algorithms for the French electricity load.",
+        "Research and development of forecasting algorithms for the French electricity demand.",
         "Intensive use of Python, R, Bash, Git, and Docker to build and deploy machine learning based programs.",
         "Supervised by Yannig Goude and co-supervised by Yann Allioux and Sandra Claudel.",
-        "Participation to the Smarter Mobility Data Challenge (see Awards).",
+        "Participation in the Smarter Mobility Data Challenge (see Awards).",
       ],
       steps: [
         {
@@ -84,32 +84,32 @@ function Resume() {
     },
     {
       name: "French Ministry of the Ecological Transition",
-      job: "Internship in the French administration : modelling the electricity sector",
+      job: "Internship in modelling the electricity sector",
       date: "oct. 2021 - march 2022 (5 months)",
       description: [
-        "Modelling of the best investments strategy to reduce carbone emissions.",
+        "Modelling the best investment strategy to reduce carbon emissions.",
         "Specialised in the electricity sector.",
-        "Linear Programming in Python (CBC).",
-        "Supervisor : Olivier de Guibert.",
+        "Linear programming in Python (CBC).",
+        "Supervisor: Olivier de Guibert.",
       ],
       logo: "mte.jpeg",
     },
     {
       name: "Sorbonne Université",
-      job: "Research Internship in Probability and machine learning",
+      job: "Research internship in Probability and Machine Learning",
       date: "april 2021 - aug. 2021 (4 months)",
       description: [
-        "Research scientist in Machine Learning applied to forecasting the French electricity load",
+        " Applying stochastic calculus to machine learning.",
         "Supervised by Gérard Biau and co-supervised by Adeline Fermanian and Pierre Marion.",
       ],
       logo: "su.jpeg",
     },
     {
       name: "Princeton University",
-      job: "Visiting Student Research Collaborator in Statistical Physics and machine learning",
+      job: "Visiting student research collaborator in Statistical Physics and Machine Learning",
       date: "june 2020 - dec. 2020 (4 months)",
       description: [
-        "Study of Machine Learning kernels (NNGP and NTK for Self-Attention).",
+        "Study of machine learning kernels (NNGP and NTK for self-attention).",
         "Programming in Python (Keras).",
         "Supervised by Tankut Can and Kamesh Krishnamurthy.",
       ],
@@ -121,10 +121,10 @@ function Resume() {
       job: "Research Internship in statistics applied to quantum physics",
       date: "feb. 2019 - jul. 2020 (4 months)",
       description: [
-        " Research team: Quantum fluctuations and special relativity",
-        "Measure of the gravitationnal mass of anti-hydrogen atoms (GBAR Project)",
+        " Research team: Quantum fluctuations and special relativity.",
+        "Measuring the gravitational mass of antihydrogen atoms (GBAR project).",
         "Programming statistical models in Python.",
-        "Advisor : Serge Reynaud",
+        "Advisor: Serge Reynaud",
       ],
 
       logo: "lkb.jpeg",
@@ -133,7 +133,7 @@ function Resume() {
 
   let formations = [
     {
-      name: "PhD in Statistics at Sorbonne Université",
+      name: "PhD in Mathematics at Sorbonne Université",
       date: "sept. 2022 - dec. 2025",
       description: "",
       logo: "su.jpeg",
@@ -160,7 +160,7 @@ function Resume() {
       name: "Sorbonne Université Master's Degree in Probability",
       date: "sept. 2020 - sept. 2021",
       description: "",
-      logo: "su.jpeg",
+      logo: "dele.jpeg",
     },
     {
       name: "Prep school (MPSI-MP*) at Lycée Louis-Le-Grand",
@@ -178,8 +178,8 @@ function Resume() {
       logo: "dele.jpeg",
     },
     {
-      name: "Cambridge Advanced Exam, C2 in English",
-      date: "aug. 2022",
+      name: "Cambridge Advanced Exam C2 in English",
+      date: "aug. 2019",
       description: "The most advanced lifelong certificate in English.",
       logo: "cae.jpeg",
     },
@@ -193,6 +193,7 @@ function Resume() {
           radius="md"
           bullet={<Logo src={experience.logo} />}
           title={<CustomTitle text={experience.name} />}
+          key={experience.description}
         >
           <ItemText
             title={experience.job}
@@ -203,7 +204,7 @@ function Resume() {
         </Timeline.Item>,
 
         experience.steps.map((step) => (
-          <Timeline.Item lineVariant="dotted" bulletSize={25}>
+          <Timeline.Item lineVariant="dotted" bulletSize={25} key={step.job}>
             <ItemText
               title={step.job}
               date={step.date}
@@ -220,6 +221,7 @@ function Resume() {
         radius="md"
         bullet={<Logo src={experience.logo} />}
         title={<CustomTitle text={experience.name} />}
+        key={experience.name}
       >
         <ItemText
           title={experience.job}
@@ -233,9 +235,10 @@ function Resume() {
 
   let formation_timelines = formations.map((formation) => (
     <Timeline.Item
+      lineVariant="dotted"
       bullet={<Logo src={formation.logo} />}
       bulletSize={w > 480 ? 70 : 60}
-      title={<CustomTitle text={formation.name} />}
+      title={<CustomTitle text={formation.name} key={formation.name} />}
     >
       <ItemText
         title={formation.job}
@@ -247,9 +250,10 @@ function Resume() {
 
   let certificates_timelines = certificates.map((certificate) => (
     <Timeline.Item
+      lineVariant="dotted"
       bullet={<Logo src={certificate.logo} />}
       bulletSize={w > 480 ? 70 : 60}
-      title={<CustomTitle text={certificate.name} />}
+      title={<CustomTitle text={certificate.name} key={certificate.name} />}
     >
       <ItemText
         title={certificate.job}
@@ -269,6 +273,7 @@ function Resume() {
             height: `${w > 480 ? "4.5em" : "4em"}`,
           }}
           className="resume-img"
+          aria-label="Company logo"
         />
       </div>
     );
@@ -353,14 +358,14 @@ function ItemText(props) {
         {props.date}
       </Text>
       <Spoiler
-        maxHeight={props.spoiler && w < 480 ? 0 : 60}
+        maxHeight={props.spoiler && w < 480 ? 0 : 21}
         showLabel="Show more"
         hideLabel="Hide"
       >
         {Array.isArray(props.description) ? (
           <div className="descriptions">
-            {props.description.map((item) => (
-              <div>{item}</div>
+            {props.description.map((item, index) => (
+              <div key={index}>{item}</div>
             ))}
           </div>
         ) : (
@@ -374,7 +379,8 @@ function ItemText(props) {
 function CustomTitle(props) {
   return (
     <div className="title-container">
-      <Text fw={700}>{props.text}</Text>
+      <Title order={4}>{props.text}</Title>
+      {/*<Text fw={700}>{props.text}</Text>*/}
     </div>
   );
 }

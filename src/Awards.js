@@ -12,9 +12,7 @@ function Awards() {
       date: "2022",
       rank: "Rank 3",
       description:
-        "I teamed with Alexis Thomas in this " +
-        "international data challenge on electric vehicules load forecasting organised by the Manifeste IA" +
-        " network of 16 French industrials and the TAILOR european project on the scientific foundations for trustworthy AI.",
+        "I teamed up with Alexis Thomas for this international data challenge on electric vehicle load forecasting organised by the Manifeste IA network of 16 industrial companies and the TAILOR European project on the scientific foundations for trustworthy AI.",
       github: "https://github.com/NathanDoumeche/Smart_mobility_challenge",
     },
     {
@@ -23,7 +21,7 @@ function Awards() {
       date: "2017",
       rank: "Bronze medal",
       description:
-        "International challenge in both theoretical and experimental Physics for undergraduate students which held in Yogyakarta, Indonesia.",
+        "International challenge in both theoretical and experimental physics for undergraduate students which held in Yogyakarta, Indonesia.",
     },
     {
       name: "Concours Général des Lycées",
@@ -32,14 +30,14 @@ function Awards() {
       date: "2016",
       rank: "Mention in Physics and Chemistry",
       description:
-        "French national challenge in theoretical Physics and Chemistry organized by the French Ministry of Education for highscool students.",
+        "National competition in theoretical physics and chemistry  for secondary school students, organised by the French Ministry of National Education.",
     },
     {
       name: "Local Mathematics Olympiads",
       date: "2015",
       rank: "Rank 1",
       description:
-        "French challenge in Mathematics organized by the French Ministry of Education and by the Animath association at the scale of the Académie de Nice for highscool students.",
+        "Mathematics competition for secondary school students,  organised by the French Ministry of National Education and by the Animath association, on the scale of the Académie de Nice.",
       linkName:
         "https://www.pedagogie.ac-nice.fr/mathematiques/category/culture-mathematique/rallyes-et-concours/olympiades/",
     },
@@ -58,6 +56,7 @@ function Awards() {
           description={article.description}
           lienPdf={article.linkName}
           lienGithub={article.github}
+          key={article.name}
         />
       ))}
     </div>
@@ -82,12 +81,12 @@ function Article(props) {
         }}
       >
         {props.lienGithub ? (
-          <a target="_blank" href={props.lienGithub}>
+          <a target="_blank" href={props.lienGithub} aria-label="GitHub page.">
             <SiGithub size={30} />
           </a>
         ) : null}
         {props.lienPdf ? (
-          <a target="_blank" href={props.lienPdf}>
+          <a target="_blank" href={props.lienPdf} aria-label="Award page.">
             <IconLink size={30} />
           </a>
         ) : null}

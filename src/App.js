@@ -1,9 +1,7 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { MantineProvider, useMantineTheme } from "@mantine/core";
 import { useState } from "react";
-import { Drawer, Button, Group, Burger, NavLink } from "@mantine/core";
-import ReactDOM from "react-dom/client";
+import { Drawer, Burger } from "@mantine/core";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Awards from "./Awards.js";
 import Banner from "./Banner";
@@ -12,7 +10,6 @@ import Contact from "./Contact.js";
 import Footer from "./Footer.js";
 import Research from "./research";
 import Resume from "./Resume";
-import Articles from "./Articles";
 
 function App() {
   var w = document.documentElement.clientWidth || window.innerWidth;
@@ -48,6 +45,7 @@ function App() {
                 color="white"
                 opened={opened}
                 onClick={() => setOpened((o) => !o)}
+                aria-label="Open navigation."
               />
             </div>
             {/* <Banner /> */}
@@ -61,6 +59,7 @@ function App() {
               trapFocus={false}
               closeOnEscape={false}
               lockScroll={false}
+              closeButtonLabel="Close navigation."
             >
               <Banner close={() => setOpened(false)} />
             </Drawer>

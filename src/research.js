@@ -1,11 +1,11 @@
-import { ActionIcon, Title } from "@mantine/core";
+import { Title } from "@mantine/core";
 import { IconDownload, IconLink } from "@tabler/icons-react";
 import { SiGithub } from "react-icons/si";
 
 var w = document.documentElement.clientWidth || window.innerWidth;
 
 function Research() {
-  let articles = [
+  /*let articles = [
     {
       title: "Neural networks are actually cool",
       date: "2021",
@@ -26,7 +26,7 @@ function Research() {
       journal: "Picsou Magazine",
       authors: ["Nathan Doumèche", "Alexis Thomas"],
     },
-  ];
+  ];*/
 
   let talks = [
     {
@@ -59,6 +59,7 @@ function Research() {
           authors={article.authors}
           lienPdf={article.pdf}
           lienGithub={article.github}
+          key={article.title}
         />
       ))}*/}
 
@@ -73,6 +74,7 @@ function Research() {
           place={talk.place}
           lienPdf={talk.pdf}
           lienConf={talk.link}
+          key={talk.title}
         />
       ))}
 
@@ -85,6 +87,7 @@ function Research() {
           date={lecture.date}
           level={lecture.level}
           place={lecture.place}
+          key={lecture.title}
         />
       ))}
     </div>
@@ -139,12 +142,16 @@ function Talk(props) {
         }}
       >
         {props.lienConf ? (
-          <a target="_blank" href={props.lienConf}>
+          <a
+            target="_blank"
+            href={props.lienConf}
+            aria-label="Link to the talk webpage."
+          >
             <IconLink size={30} />
           </a>
         ) : null}
         {props.lienPdf ? (
-          <a target="_blank" href={props.lienPdf}>
+          <a target="_blank" href={props.lienPdf} aria-label="Download slides.">
             <IconDownload size={30} />
           </a>
         ) : null}
