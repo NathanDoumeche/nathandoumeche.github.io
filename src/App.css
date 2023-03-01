@@ -318,9 +318,8 @@ a {
   align-items: center;
   display: flex;
   overflow: hidden;
-  width: 70;
-  height: 70;
-  border-radius: 10%;
+  width: 80;
+  height: 80;
   position: absolute;
 }
 

@@ -160,7 +160,7 @@ function Resume() {
       name: "Sorbonne Université Master's Degree in Probability",
       date: "sept. 2020 - sept. 2021",
       description: "",
-      logo: "dele.jpeg",
+      logo: "su.jpeg",
     },
     {
       name: "Prep school (MPSI-MP*) at Lycée Louis-Le-Grand",
@@ -189,8 +189,7 @@ function Resume() {
     experience.steps ? (
       [
         <Timeline.Item
-          bulletSize={w > 480 ? 70 : 60}
-          radius="md"
+          bulletSize={w > 480 ? 60 : 50}
           bullet={<Logo src={experience.logo} />}
           title={<CustomTitle text={experience.name} />}
           key={experience.description}
@@ -217,8 +216,7 @@ function Resume() {
     ) : (
       <Timeline.Item
         lineVariant="dotted"
-        bulletSize={w > 480 ? 70 : 60}
-        radius="md"
+        bulletSize={w > 480 ? 60 : 50}
         bullet={<Logo src={experience.logo} />}
         title={<CustomTitle text={experience.name} />}
         key={experience.name}
@@ -237,7 +235,7 @@ function Resume() {
     <Timeline.Item
       lineVariant="dotted"
       bullet={<Logo src={formation.logo} />}
-      bulletSize={w > 480 ? 70 : 60}
+      bulletSize={w > 480 ? 60 : 50}
       title={<CustomTitle text={formation.name} key={formation.name} />}
     >
       <ItemText
@@ -252,7 +250,7 @@ function Resume() {
     <Timeline.Item
       lineVariant="dotted"
       bullet={<Logo src={certificate.logo} />}
-      bulletSize={w > 480 ? 70 : 60}
+      bulletSize={w > 480 ? 60 : 50}
       title={<CustomTitle text={certificate.name} key={certificate.name} />}
     >
       <ItemText

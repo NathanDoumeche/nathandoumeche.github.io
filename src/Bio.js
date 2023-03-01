@@ -1,5 +1,5 @@
 import { SiGithub, SiLinkedin, SiResearchgate } from "react-icons/si";
-import Photo from "./assets/nathou.jpeg";
+import Photo from "./assets/nathandoumeche.jpeg";
 import { Text, Title } from "@mantine/core";
 
 // React function for biography
