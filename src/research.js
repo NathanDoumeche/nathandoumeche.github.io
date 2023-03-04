@@ -30,10 +30,11 @@ function Research() {
 
   let talks = [
     {
-      title: "Signed Taylor expansion and applications to machine learning",
-      date: "2021",
+      title:
+        "Taylor expansion with signature and applications to machine learning",
+      date: "(2021),",
       conf: "GDR TRAG - Signatures and rough paths for machine learning",
-      place: "Institut Henri Poincaré - Paris- France",
+      place: "Institut Henri Poincaré - Paris - France",
       link: "https://young-trag-2021.sciencesconf.org/",
       pdf: "https://drive.google.com/file/d/1EeZUqUpXRPFzwyK3KVJh4o4DW2O65XHc/view?usp=sharing",
     },
@@ -42,9 +43,9 @@ function Research() {
   let lectures = [
     {
       title: "Partial differential equations in Physics",
-      date: "2021",
-      place: "Ecole Normale Supérieure de Paris (Ulm) - PSL University",
-      level: "Highscool TalENS programme",
+      date: "(2021),",
+      place: "École Normale Supérieure de Paris (Ulm) - PSL University",
+      level: "TalENS programme for secondary school students",
     },
   ];
   return (
@@ -65,7 +66,7 @@ function Research() {
       ))}*/}
 
       <Title style={{ paddingBottom: "0.5em" }} order={1}>
-        Talks
+        Scientific talks
       </Title>
       {talks.map((talk) => (
         <Talk
@@ -95,7 +96,8 @@ function Research() {
   );
 }
 
-function Article(props) {
+{
+  /*function Article(props) {
   return (
     <div className="research-container">
       <div className="research-left-side">
@@ -124,6 +126,7 @@ function Article(props) {
       </div>
     </div>
   );
+}*/
 }
 
 function Talk(props) {
@@ -133,7 +136,7 @@ function Talk(props) {
         <div className="research-title">{props.conf}</div>
         <div className="research-date">
           {"  "}
-          <i>{props.title}</i> ({props.date}), {props.place}
+          <i>{props.title}</i> {props.date} {props.place}
         </div>
       </div>
       <div
@@ -167,7 +170,7 @@ function Teaching(props) {
       <div className="research-left-side">
         <div className="research-title">{props.title}</div>
         <div className="research-date">
-          <i>{props.level}</i> ({props.date}), {props.place}
+          <i>{props.level}</i> {props.date} {props.place}
         </div>
       </div>
       <div

@@ -6,7 +6,7 @@ import { Text, Title } from "@mantine/core";
 function Bio() {
   return (
     <div className="bio">
-      <img src={Photo} alt="Nathan Doumèche's photo" className="image" />
+      <img src={Photo} alt="Nathan Doumeche photo" className="image" />
       <div className="bio__content">
         <Title
           style={{ paddingTop: "0.5em", paddingBottom: "0.5em" }}
@@ -21,7 +21,7 @@ function Bio() {
           <a
             target="_blank"
             href="https://perso.lpsm.paris/~biau/"
-            aria-label="Gérard Biau's webpage"
+            aria-label="Gérard Biau webpage"
           >
             Gérard Biau
           </a>{" "}
@@ -29,38 +29,38 @@ function Bio() {
           <a
             target="_blank"
             href="https://perso.lpsm.paris/~cboyer/"
-            aria-label="Claire Boyer's webpage"
+            aria-label="Claire Boyer webpage"
           >
             Claire Boyer
           </a>{" "}
-          at Sorbonne Université. In the meantime, I am working at EDF Lab Paris
+          at Sorbonne Université. In parallel, I am working at EDF Lab Paris
           Saclay with Yann Allioux, Yannig Goude, and Sandra Claudel.
         </div>
         <Title
           style={{ paddingTop: "0.5em", paddingBottom: "0.5em" }}
           order={1}
         >
-          Research interests
+          Research areas
         </Title>
         <div className="bio-paragraph">
           Passionate about the connections between theory and practice in
           science, my research focuses on both the theoretical foundations of
-          machine learning and its applications to the energy sector. Hopefully,
-          this will be a small step towards understanding artificial
-          intelligence and improving our daily lives.
+          machine learning and its applications to the energy sector. The aim is
+          to improve our understanding of how artificial intelligence works so
+          that we can make better use of it in everyday life.
         </div>
         <div className="bio-paragraph" style={{ paddingTop: "1em" }}>
           Together with Gérard Biau and Claire Boyer, I study the theoretical
           properties of physics-informed neural networks (PINNs). These
-          algorithms are very exciting because they combine the powerful
-          data-driven technologies of machine learning with the interpretability
-          of modelling.
+          algorithms are very promessing because they combine the powerful
+          data-driven techniques of machine learning with the interpretability
+          of physics modelling.
         </div>
         <div className="bio-paragraph" style={{ paddingTop: "1em" }}>
           In collaboration with Yann Allioux, Yannig Goude, and Sandra Claudel,
-          I am working on forecasting the French electricity demand. This will
-          help EDF to produce electricity at the right time and to act
-          efficiently on the energy markets.
+          I work on forecasting French electricity demand, which helps EDF to
+          produce electricity at the right time and to act efficiently on the
+          energy markets.
         </div>
         <Title
           style={{ paddingTop: "0.5em", paddingBottom: "0.5em" }}

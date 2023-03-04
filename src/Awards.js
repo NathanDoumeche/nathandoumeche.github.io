@@ -21,7 +21,7 @@ function Awards() {
       date: "2017",
       rank: "Bronze medal",
       description:
-        "International challenge in both theoretical and experimental physics for undergraduate students which held in Yogyakarta, Indonesia.",
+        "International competition in both theoretical and experimental physics for undergraduate students which held in Yogyakarta, Indonesia.",
     },
     {
       name: "Concours Général des Lycées",

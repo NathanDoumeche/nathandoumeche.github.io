@@ -72,7 +72,7 @@ function Resume() {
         "Research and development of forecasting algorithms for the French electricity demand.",
         "Intensive use of Python, R, Bash, Git, and Docker to build and deploy machine learning based programs.",
         "Supervised by Yannig Goude and co-supervised by Yann Allioux and Sandra Claudel.",
-        "Participation in the Smarter Mobility Data Challenge (see Awards).",
+        "Participation in the Smarter Mobility Data Challenge.",
       ],
       steps: [
         {
@@ -106,7 +106,7 @@ function Resume() {
     },
     {
       name: "Princeton University",
-      job: "Visiting student research collaborator in Statistical Physics and Machine Learning",
+      job: "Visiting student-research collaborator in Statistical Physics and Machine Learning",
       date: "june 2020 - dec. 2020 (4 months)",
       description: [
         "Study of machine learning kernels (NNGP and NTK for self-attention).",
@@ -124,7 +124,7 @@ function Resume() {
         " Research team: Quantum fluctuations and special relativity.",
         "Measuring the gravitational mass of antihydrogen atoms (GBAR project).",
         "Programming statistical models in Python.",
-        "Advisor: Serge Reynaud",
+        "Supervised by Serge Reynaud.",
       ],
 
       logo: "lkb.jpeg",
@@ -139,25 +139,25 @@ function Resume() {
       logo: "su.jpeg",
     },
     {
-      name: "Mines Paris graduate degree (Double degree)",
+      name: "Double degree Mines Paris - ENS Ulm",
       date: "sept. 2021 - sept. 2022",
       description: "",
       logo: "mines.png",
     },
     {
-      name: "ENS Ulm (PSL University) graduate degree in Mathematics",
+      name: "Master's degree in Mathematics at ENS Ulm (PSL University)",
       date: "sept. 2018 - sept. 2022",
-      description: "",
+      description: "Ranked 15th in the ENS Ulm entrance exam.",
       logo: "ulm.jpg",
     },
     {
-      name: "ENS Ulm (PSL University) graduate degree in Physics",
+      name: "Master's degree in Physics at ENS Ulm (PSL University)",
       date: "sept. 2018 - sept. 2022",
-      description: "",
+      description: "Ranked 15th in the ENS Ulm entrance exam.",
       logo: "ulm.jpg",
     },
     {
-      name: "Sorbonne Université Master's Degree in Probability",
+      name: "Master's degree in Probability and Random Models at Sorbonne Université",
       date: "sept. 2020 - sept. 2021",
       description: "",
       logo: "su.jpeg",
@@ -198,7 +198,7 @@ function Resume() {
             title={experience.job}
             date={experience.date}
             description={experience.description}
-            spoiler={true}
+            spoilerSize={21}
           />
         </Timeline.Item>,
 
@@ -208,7 +208,7 @@ function Resume() {
               title={step.job}
               date={step.date}
               description={step.description}
-              spoiler={true}
+              spoilerSize={21}
             />
           </Timeline.Item>
         )),
@@ -225,7 +225,7 @@ function Resume() {
           title={experience.job}
           date={experience.date}
           description={experience.description}
-          spoiler={true}
+          spoilerSize={21}
         />
       </Timeline.Item>
     )
@@ -242,6 +242,7 @@ function Resume() {
         title={formation.job}
         date={formation.date}
         description={formation.description}
+        spoilerSize={1000}
       />
     </Timeline.Item>
   ));
@@ -257,6 +258,7 @@ function Resume() {
         title={certificate.job}
         date={certificate.date}
         description={certificate.description}
+        spoilerSize={1000}
       />
     </Timeline.Item>
   ));
@@ -284,7 +286,7 @@ function Resume() {
         order={1}
         className="section-container"
       >
-        Work experience
+        Professional background
       </Title>
       <Timeline
         color="gray"
@@ -356,7 +358,7 @@ function ItemText(props) {
         {props.date}
       </Text>
       <Spoiler
-        maxHeight={props.spoiler && w < 480 ? 0 : 21}
+        maxHeight={props.spoiler && w < 480 ? 0 : props.spoilerSize}
         showLabel="Show more"
         hideLabel="Hide"
       >

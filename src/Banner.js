@@ -18,7 +18,7 @@ function Banner(props) {
   const icons = [IconHome, IconNews, IconSchool, IconAward];
 
   let pages = [
-    { name: "Home", path: "/" },
+    { name: "Homepage", path: "/" },
     { name: "Research & teaching", path: "/research" },
     { name: "Resume", path: "/resume" },
     { name: "Awards", path: "/awards" },
