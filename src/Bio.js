@@ -1,6 +1,6 @@
 import { SiGithub, SiLinkedin, SiResearchgate } from "react-icons/si";
 import Photo from "./assets/nathandoumeche.jpeg";
-import { Text, Title } from "@mantine/core";
+import { Title } from "@mantine/core";
 
 // React function for biography
 function Bio() {
@@ -34,7 +34,15 @@ function Bio() {
             Claire Boyer
           </a>{" "}
           at Sorbonne Université. In parallel, I am working at EDF Lab Paris
-          Saclay with Yann Allioux, Yannig Goude, and Sandra Claudel.
+          Saclay with Yann Allioux, Sandra Claudel, and{" "}
+          <a
+            target="blank"
+            href="https://www.imo.universite-paris-saclay.fr/~yannig.goude/about.html"
+            aria-label="Yannig Goude webpage"
+          >
+            Yannig Goude
+          </a>
+          .
         </div>
         <Title
           style={{ paddingTop: "0.5em", paddingBottom: "0.5em" }}
@@ -47,7 +55,7 @@ function Bio() {
           science, my research focuses on both the theoretical foundations of
           machine learning and its applications to the energy sector. The aim is
           to improve our understanding of how artificial intelligence works so
-          that we can make better use of it in everyday life.
+          that we can make better use of it in our everyday life.
         </div>
         <div className="bio-paragraph" style={{ paddingTop: "1em" }}>
           Together with Gérard Biau and Claire Boyer, I study the theoretical
@@ -57,8 +65,8 @@ function Bio() {
           of physics modelling.
         </div>
         <div className="bio-paragraph" style={{ paddingTop: "1em" }}>
-          In collaboration with Yann Allioux, Yannig Goude, and Sandra Claudel,
-          I work on forecasting French electricity demand, which helps EDF to
+          In collaboration with Yann Allioux, Sandra Claudel, and Yannig Goude,
+          I work on forecasting the French electricity demand, which helps EDF
           produce electricity at the right time and to act efficiently on the
           energy markets.
         </div>

@@ -1,6 +1,5 @@
 import { Title } from "@mantine/core";
 import { IconDownload, IconLink } from "@tabler/icons-react";
-import { SiGithub } from "react-icons/si";
 
 var w = document.documentElement.clientWidth || window.innerWidth;
 
@@ -66,7 +65,7 @@ function Research() {
       ))}*/}
 
       <Title style={{ paddingBottom: "0.5em" }} order={1}>
-        Scientific talks
+        Research talks
       </Title>
       {talks.map((talk) => (
         <Talk

@@ -1,12 +1,5 @@
 import { Link } from "react-router-dom";
-import {
-  IconHome,
-  IconSchool,
-  IconNews,
-  IconAward,
-  IconAddressBook,
-  IconArticle,
-} from "@tabler/icons-react";
+import { IconHome, IconSchool, IconNews, IconAward } from "@tabler/icons-react";
 import { NavLink, Text } from "@mantine/core";
 import { useLocation } from "react-router-dom";
 

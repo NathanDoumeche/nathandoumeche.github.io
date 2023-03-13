@@ -172,15 +172,21 @@ function Resume() {
 
   let certificates = [
     {
-      name: "DELE C1 in Spanish",
+      name: "Diploma de Español como Lengua Extranjera - C1 in Spanish",
       date: "aug. 2022",
-      description: "Lifelong certificate of advanced proficiency in Spanish.",
+      description: [
+        "Lifelong certificate of advanced proficiency in Spanish.",
+        "Reference 39RXGZSS2IYYIV3IHSJUPMW8H2.",
+      ],
       logo: "dele.jpeg",
     },
     {
-      name: "Cambridge Advanced Exam C2 in English",
+      name: "Cambridge Advanced Exam - C2 in English",
       date: "aug. 2019",
-      description: "The most advanced lifelong certificate in English.",
+      description: [
+        "The most advanced lifelong certificate in English.",
+        "Reference FR585 6026.",
+      ],
       logo: "cae.jpeg",
     },
   ];
@@ -258,7 +264,7 @@ function Resume() {
         title={certificate.job}
         date={certificate.date}
         description={certificate.description}
-        spoilerSize={1000}
+        spoilerSize={21}
       />
     </Timeline.Item>
   ));
