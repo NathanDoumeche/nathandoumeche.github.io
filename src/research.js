@@ -4,30 +4,38 @@ import { IconDownload, IconLink } from "@tabler/icons-react";
 var w = document.documentElement.clientWidth || window.innerWidth;
 
 function Research() {
-  /*let articles = [
+  let articles = [
     {
-      title: "Neural networks are actually cool",
-      date: "2021",
-      journal: "Science",
-      authors: ["Nathan Doumèche", "Alexis Thomas"],
-      pdf: "https://arxiv.org/pdf/2006.08442.pdf",
-      github: "https://www.google.com",
+      title: "Convergence and error analysis of PINNs",
+      date: "2023",
+      authors: ["Nathan Doumèche", "Gérard Biau", "Claire Boyer"],
+      pdf: "https://hal.science/hal-04085519",
     },
-    {
-      title: "Katy Perry new album leaks",
-      date: "2021",
-      journal: "Neurips",
-      authors: ["Nathan Doumèche", "Alexis Thomas"],
-    },
-    {
-      title: "Top 10 most horrifying creatures",
-      date: "2021",
-      journal: "Picsou Magazine",
-      authors: ["Nathan Doumèche", "Alexis Thomas"],
-    },
-  ];*/
+  ];
 
   let talks = [
+    {
+      title:
+        "Prévision court-terme de la consommation électrique française à l'aide de données de présence",
+      date: "(2023),",
+      conf: "54ème Journées de Statistique - Séries temporelles",
+      place: "ULB - Brussels - Belgium",
+      link: "https://jds2023.sciencesconf.org/",
+    },
+    {
+      title: " Convergence des réseaux neuronaux avec a priori physique",
+      date: "(2023),",
+      conf: "54ème Journées de Statistique - Apprentissage statistique",
+      place: "ULB - Brussels - Belgium",
+      link: "https://jds2023.sciencesconf.org/",
+    },
+    {
+      title: "Convergence and error analysis of PINNs",
+      date: "(2023),",
+      conf: "Inaugural CAMDA Conference",
+      place: "Texas A&M - College Station - USA",
+      link: "https://sites.google.com/tamu.edu/camda-conference/",
+    },
     {
       title:
         "Taylor expansion with signature and applications to machine learning",
@@ -49,22 +57,21 @@ function Research() {
   ];
   return (
     <div className="research">
-      {/*<Title style={{ paddingBottom: "1em" }} order={1}>
-        Peer-reviewed articles
+      <Title style={{ paddingBottom: "1em" }} order={1}>
+        Preprints
       </Title>
       {articles.map((article) => (
         <Article
           title={article.title}
           date={article.date}
-          journal={article.journal}
           authors={article.authors}
           lienPdf={article.pdf}
           lienGithub={article.github}
           key={article.title}
         />
-      ))}*/}
+      ))}
 
-      <Title style={{ paddingBottom: "0.5em" }} order={1}>
+      <Title style={{ paddingTop: "0.5em", paddingBottom: "0.5em" }} order={1}>
         Research talks
       </Title>
       {talks.map((talk) => (
@@ -95,15 +102,14 @@ function Research() {
   );
 }
 
-{
-  /*function Article(props) {
+function Article(props) {
   return (
     <div className="research-container">
       <div className="research-left-side">
         <div className="research-title">{props.title}</div>
         <div className="research-date">
           {"  "}
-          {props.authors.join(", ")} ({props.date}) in <i>{props.journal}</i>
+          {props.authors.join(", ")} ({props.date})
         </div>
       </div>
       <div
@@ -114,7 +120,7 @@ function Research() {
       >
         {props.lienGithub ? (
           <a target="_blank" href={props.lienGithub}>
-            <SiGithub size={30} />
+            <IconDownload size={30} />
           </a>
         ) : null}
         {props.lienPdf ? (
@@ -125,7 +131,6 @@ function Research() {
       </div>
     </div>
   );
-}*/
 }
 
 function Talk(props) {
