@@ -9,7 +9,7 @@ function Research() {
       title: "Convergence and error analysis of PINNs",
       date: "2023",
       authors: ["Nathan Doumèche", "Gérard Biau", "Claire Boyer"],
-      pdf: "https://hal.science/hal-04085519",
+      pdf: "https://arxiv.org/abs/2305.01240",
     },
   ];
 
@@ -47,6 +47,16 @@ function Research() {
     },
   ];
 
+  let posters = [
+    {
+      title: "Convergence and error analysis of PINNs",
+      date: "(2023),",
+      conf: "Foundations of Computational Mathematics 2023",
+      place: "Sorbonne Université - Paris - France",
+      link: "https://focm2023.org/",
+    },
+  ];
+
   let lectures = [
     {
       title: "Partial differential equations in Physics",
@@ -75,6 +85,21 @@ function Research() {
         Research talks
       </Title>
       {talks.map((talk) => (
+        <Talk
+          title={talk.title}
+          date={talk.date}
+          conf={talk.conf}
+          place={talk.place}
+          lienPdf={talk.pdf}
+          lienConf={talk.link}
+          key={talk.title}
+        />
+      ))}
+
+      <Title style={{ paddingTop: "0.5em", paddingBottom: "0.5em" }} order={1}>
+        Research posters
+      </Title>
+      {posters.map((talk) => (
         <Talk
           title={talk.title}
           date={talk.date}
