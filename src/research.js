@@ -28,13 +28,23 @@ function Research() {
       conf: "54ème Journées de Statistique - Apprentissage statistique",
       place: "ULB - Brussels - Belgium",
       link: "https://jds2023.sciencesconf.org/",
+      pdf: "https://drive.google.com/file/d/1tlBAeNFTqQQUcxJ4-FksOCKR_xYvIA2Q/view?usp=sharing",
     },
     {
-      title: "Convergence and error analysis of PINNs",
+      title: "Some theoretical properties of physics-informed neural networks",
       date: "(2023),",
       conf: "Inaugural CAMDA Conference",
       place: "Texas A&M - College Station - USA",
       link: "https://sites.google.com/tamu.edu/camda-conference/",
+      pdf: "https://drive.google.com/file/d/1tlBAeNFTqQQUcxJ4-FksOCKR_xYvIA2Q/view?usp=sharing",
+    },
+    {
+      title: "Convergence and error analysis of PINNs",
+      date: "(2023),",
+      conf: "LPSM PhD worshop",
+      place: "Sorbonne University - Paris - France",
+      link: "https://www.lpsm.paris/seminaires/gtt/index",
+      pdf: "https://drive.google.com/file/d/1tlBAeNFTqQQUcxJ4-FksOCKR_xYvIA2Q/view?usp=sharing",
     },
     {
       title:
