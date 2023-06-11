@@ -1,5 +1,6 @@
 import { Title } from "@mantine/core";
 import { IconDownload, IconLink } from "@tabler/icons-react";
+import { SiGithub } from "react-icons/si";
 
 var w = document.documentElement.clientWidth || window.innerWidth;
 
@@ -25,12 +26,15 @@ function Research() {
         "Tiphaine Phe-Neau",
       ],
       pdf: "https://hal.sorbonne-universite.fr/hal-04119408v1",
+      github: "https://github.com/NathanDoumeche/Smart_mobility_challenge",
     },
     {
       title: "Convergence and error analysis of PINNs",
       date: "2023",
       authors: ["Nathan Doumèche", "Gérard Biau", "Claire Boyer"],
       pdf: "https://arxiv.org/abs/2305.01240",
+      github:
+        "https://github.com/NathanDoumeche/Convergence_and_error_analysis_of_PINNs",
     },
   ];
 
@@ -177,7 +181,7 @@ function Article(props) {
       >
         {props.lienGithub ? (
           <a target="_blank" href={props.lienGithub}>
-            <IconDownload size={30} />
+            <SiGithub size={30} />
           </a>
         ) : null}
         {props.lienPdf ? (

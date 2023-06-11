@@ -1,4 +1,9 @@
-import { SiGithub, SiLinkedin, SiResearchgate } from "react-icons/si";
+import {
+  SiGithub,
+  SiLinkedin,
+  SiResearchgate,
+  SiGooglescholar,
+} from "react-icons/si";
 import Photo from "./assets/nathandoumeche.jpeg";
 import { Title } from "@mantine/core";
 
@@ -91,14 +96,14 @@ function Bio() {
           >
             <SiLinkedin size={30} />
           </a>
-          {/*<a
+          <a
             className="app-logo"
             target="_blank"
             rel="noopener noreferrer"
-            href=""
+            href="https://scholar.google.com/citations?user=3JoxDxUAAAA"
           >
             <SiGooglescholar size={30} />
-  </a>*/}
+          </a>
           <a
             className="app-logo"
             target="_blank"
