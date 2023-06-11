@@ -100,7 +100,7 @@ function Bio() {
             className="app-logo"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://scholar.google.com/citations?user=3JoxDxUAAAA"
+            href="https://scholar.google.com/citations?user=3JoxDxUAAAAJ"
           >
             <SiGooglescholar size={30} />
           </a>
