@@ -6,6 +6,27 @@ var w = document.documentElement.clientWidth || window.innerWidth;
 function Research() {
   let articles = [
     {
+      title:
+        "Forecasting Electric Vehicle Charging Station Occupancy: Smarter Mobility Data Challenge",
+      date: "2023",
+      authors: [
+        "Yvenn Amara-Ouali",
+        "Yannig Goude",
+        "Nathan Doumèche",
+        "Pascal Veyret",
+        "Alexis Thomas",
+        "Daniel Hebenstreit",
+        "Thomas Wedenig",
+        "Arthur Satouf",
+        "Aymeric Jan",
+        "Yannick Deleuze",
+        "Paul Berhaut",
+        "Sébastien Treguer",
+        "Tiphaine Phe-Neau",
+      ],
+      pdf: "https://hal.sorbonne-universite.fr/hal-04119408v1",
+    },
+    {
       title: "Convergence and error analysis of PINNs",
       date: "2023",
       authors: ["Nathan Doumèche", "Gérard Biau", "Claire Boyer"],
@@ -41,7 +62,7 @@ function Research() {
     {
       title: "Convergence and error analysis of PINNs",
       date: "(2023),",
-      conf: "LPSM PhD worshop",
+      conf: "LPSM PhD seminar",
       place: "Sorbonne University - Paris - France",
       link: "https://www.lpsm.paris/seminaires/gtt/index",
       pdf: "https://drive.google.com/file/d/1tlBAeNFTqQQUcxJ4-FksOCKR_xYvIA2Q/view?usp=sharing",
@@ -59,11 +80,12 @@ function Research() {
 
   let posters = [
     {
-      title: "Convergence and error analysis of PINNs",
+      title: "Some statistical insights into PINNs",
       date: "(2023),",
       conf: "Foundations of Computational Mathematics 2023",
       place: "Sorbonne Université - Paris - France",
       link: "https://focm2023.org/",
+      pdf: "https://drive.google.com/file/d/1lLlqYBM23qzh95ZPSKW1H9R53ULPUBN6/view?usp=sharing",
     },
   ];
 

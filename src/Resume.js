@@ -134,7 +134,7 @@ function Resume() {
   let formations = [
     {
       name: "PhD in Mathematics at Sorbonne Université",
-      date: "sept. 2022 - dec. 2025",
+      date: "dec. 2022 - dec. 2025",
       description: "",
       logo: "su.jpeg",
     },
@@ -153,7 +153,7 @@ function Resume() {
     {
       name: "Master's degree in Physics at ENS Ulm (PSL University)",
       date: "sept. 2018 - sept. 2022",
-      description: "Ranked 15th in the ENS Ulm entrance exam.",
+      description: "",
       logo: "ulm.jpg",
     },
     {
