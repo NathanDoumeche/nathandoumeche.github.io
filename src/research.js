@@ -14,7 +14,6 @@ function Research() {
         "Nathan Doumèche",
         "Yann Allioux",
         "Yannig Goude",
-        "Daniel Hebenstreit",
         "Stefania Rubrichi",
       ],
       pdf: "https://arxiv.org/abs/2309.16238",
