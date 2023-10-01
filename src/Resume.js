@@ -134,43 +134,58 @@ function Resume() {
   let formations = [
     {
       name: "PhD in Mathematics at Sorbonne Université",
-      date: "dec. 2022 - dec. 2025",
-      description: "",
+      date: "2022 - 2025",
+      description:
+        "Physics informed machine learning and time series forecasting",
       logo: "su.jpeg",
     },
     {
+      name: "BFC at INSEAD",
+      date: "2023 - 2024",
+      description: "",
+      logo: "insead.jpeg",
+    },
+    {
       name: "Double degree Mines Paris - ENS Ulm",
-      date: "sept. 2021 - sept. 2022",
+      date: " 2021 - 2022",
       description: "",
       logo: "mines.png",
     },
     {
       name: "Master's degree in Mathematics at ENS Ulm (PSL University)",
-      date: "sept. 2018 - sept. 2022",
+      date: "2018 - 2022",
       description: "Ranked 15th in the ENS Ulm entrance exam.",
       logo: "ulm.jpg",
     },
     {
       name: "Master's degree in Physics at ENS Ulm (PSL University)",
-      date: "sept. 2018 - sept. 2022",
+      date: "2018 - 2022",
       description: "",
       logo: "ulm.jpg",
     },
     {
       name: "Master's degree in Probability and Random Models at Sorbonne Université",
-      date: "sept. 2020 - sept. 2021",
+      date: "2020 - 2021",
       description: "",
       logo: "su.jpeg",
     },
     {
       name: "Prep school (MPSI-MP*) at Lycée Louis-Le-Grand",
-      date: "sept. 2016 - sept. 2018",
+      date: "2016 - 2018",
       description: "",
       logo: "llg.jpg",
     },
   ];
 
   let certificates = [
+    {
+      name: "Certificate of Professional Aptitude in Music Theory",
+      date: "june 2023",
+      description: [
+        "Most advanced certificate in music theory from Conservatoire régional de Paris (part of the Diploma of Musical Studies - DEM in French).",
+      ],
+      logo: "dem.jpeg",
+    },
     {
       name: "Diploma de Español como Lengua Extranjera - C1 in Spanish",
       date: "aug. 2022",

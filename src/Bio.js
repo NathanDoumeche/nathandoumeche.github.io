@@ -38,7 +38,7 @@ function Bio() {
           >
             Claire Boyer
           </a>{" "}
-          at Sorbonne Université. In parallel, I am working at EDF Lab Paris
+          at Sorbonne University. In parallel, I am working at EDF Lab Paris
           Saclay with Yann Allioux, Sandra Claudel, and{" "}
           <a
             target="blank"
@@ -58,9 +58,9 @@ function Bio() {
         <div className="bio-paragraph">
           Passionate about the connections between theory and practice in
           science, my research focuses on both the theoretical foundations of
-          machine learning and its applications to the energy sector. The aim is
-          to improve our understanding of how artificial intelligence works so
-          that we can make better use of it in our everyday life.
+          machine learning and their applications to the energy sector. The aim
+          is to improve our understanding of how artificial intelligence works
+          so that we can make better use of it in our everyday life.
         </div>
         <div className="bio-paragraph" style={{ paddingTop: "1em" }}>
           Together with Gérard Biau and Claire Boyer, I study the theoretical

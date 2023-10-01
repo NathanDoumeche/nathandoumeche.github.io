@@ -8,6 +8,20 @@ function Research() {
   let articles = [
     {
       title:
+        "Human spatial dynamics for electricity demand forecasting: the case of France during the 2022 energy crisis",
+      date: "2023",
+      authors: [
+        "Nathan Doumèche",
+        "Yann Allioux",
+        "Yannig Goude",
+        "Daniel Hebenstreit",
+        "Stefania Rubrichi",
+      ],
+      pdf: "https://arxiv.org/abs/2309.16238",
+      github: "https://github.com/NathanDoumeche/Mobility_data_assimilation",
+    },
+    {
+      title:
         "Forecasting Electric Vehicle Charging Station Occupancy: Smarter Mobility Data Challenge",
       date: "2023",
       authors: [
@@ -25,7 +39,7 @@ function Research() {
         "Sébastien Treguer",
         "Tiphaine Phe-Neau",
       ],
-      pdf: "https://hal.sorbonne-universite.fr/hal-04119408v1",
+      pdf: "https://arxiv.org/abs/2306.06142",
       github: "https://github.com/NathanDoumeche/Smart_mobility_challenge",
     },
     {
@@ -39,6 +53,14 @@ function Research() {
   ];
 
   let talks = [
+    {
+      title: "Convergence and error analysis of PINNs",
+      date: "(2023),",
+      conf: "Workshop on Physics Informed Learning",
+      place: "IMT - Toulouse - France",
+      link: "https://www.gdr-mascotnum.fr/dec23.html",
+      pdf: "https://drive.google.com/file/d/1tlBAeNFTqQQUcxJ4-FksOCKR_xYvIA2Q/view?usp=sharing",
+    },
     {
       title:
         "Prévision court-terme de la consommation électrique française à l'aide de données de présence",
@@ -84,10 +106,18 @@ function Research() {
 
   let posters = [
     {
+      title: "Human spatial dynamics for electricity demand forecasting",
+      date: "(2023),",
+      conf: "NetMob 2023",
+      place: " Universidad Carlos III de Madrid - Madrid - Spain",
+      link: "https://netmob.org/",
+      pdf: "https://drive.google.com/file/d/1AdfWSh7RiI2WR16n8OCSRLU2oi7FPIvq/view?usp=sharing",
+    },
+    {
       title: "Some statistical insights into PINNs",
       date: "(2023),",
       conf: "Foundations of Computational Mathematics 2023",
-      place: "Sorbonne Université - Paris - France",
+      place: "Sorbonne University - Paris - France",
       link: "https://focm2023.org/",
       pdf: "https://drive.google.com/file/d/1lLlqYBM23qzh95ZPSKW1H9R53ULPUBN6/view?usp=sharing",
     },
@@ -95,8 +125,14 @@ function Research() {
 
   let lectures = [
     {
+      title: "Introduction to Statistics",
+      date: "(2023-2024),",
+      place: "Sorbonne University",
+      level: "Undergraduate level (3rd year)",
+    },
+    {
       title: "Partial differential equations in Physics",
-      date: "(2021),",
+      date: "(2021-2022),",
       place: "École Normale Supérieure de Paris (Ulm) - PSL University",
       level: "TalENS programme for secondary school students",
     },
