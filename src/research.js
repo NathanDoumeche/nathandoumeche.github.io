@@ -53,11 +53,28 @@ function Research() {
 
   let talks = [
     {
+      title: "Some statistical insight into PINNs",
+      date: "(2023),",
+      conf: "Seminar of Modeling and Scientific computing",
+      place:
+        "Laboratoire Analyse, Géométrie et Applications - Paris 13 - France",
+      link: "https://www.math.univ-paris13.fr/laga/index.php/fr/mcs/seminaires/20-seminaires/65-seminaire-d-analyse-appliquee",
+      pdf: "https://drive.google.com/file/d/1tlBAeNFTqQQUcxJ4-FksOCKR_xYvIA2Q/view?usp=sharing",
+    },
+    {
       title: "Convergence and error analysis of PINNs",
       date: "(2023),",
       conf: "Workshop on Physics Informed Learning",
       place: "IMT - Toulouse - France",
       link: "https://www.gdr-mascotnum.fr/dec23.html",
+      pdf: "https://drive.google.com/file/d/1tlBAeNFTqQQUcxJ4-FksOCKR_xYvIA2Q/view?usp=sharing",
+    },
+    {
+      title: "Convergence and error analysis of PINNs",
+      date: "(2023),",
+      conf: "PGMODays",
+      place: "EDF Lab Paris-Saclay - Palaiseau - France",
+      link: "https://www.fondation-hadamard.fr/fr/programmes/les-programmes-thematiques/home/pgmo-days/?edit&language=fr",
       pdf: "https://drive.google.com/file/d/1tlBAeNFTqQQUcxJ4-FksOCKR_xYvIA2Q/view?usp=sharing",
     },
     {
@@ -136,6 +153,23 @@ function Research() {
       level: "TalENS programme for secondary school students",
     },
   ];
+
+  let activities = [
+    {
+      conf: "Reviewer for Biometrika",
+      date: "(2023)",
+      place: "",
+      level: "",
+    },
+    {
+      conf: "Organizer of NeurIPS in Paris 2023",
+      title: "",
+      date: "(2022),",
+      place: "Sorbonne University",
+      level: "TalENS programme for secondary school students",
+      link: "https://neuripsinparis.github.io/neurips2023paris/",
+    },
+  ];
   return (
     <div className="research">
       <Title style={{ paddingBottom: "1em" }} order={1}>
@@ -192,6 +226,21 @@ function Research() {
           level={lecture.level}
           place={lecture.place}
           key={lecture.title}
+        />
+      ))}
+
+      <Title style={{ paddingTop: "0.5em", paddingBottom: "0.5em" }} order={1}>
+        Academic activities
+      </Title>
+      {activities.map((talk) => (
+        <Talk
+          title={talk.title}
+          date={talk.date}
+          conf={talk.conf}
+          place={talk.place}
+          lienPdf={talk.pdf}
+          lienConf={talk.link}
+          key={talk.title}
         />
       ))}
     </div>
