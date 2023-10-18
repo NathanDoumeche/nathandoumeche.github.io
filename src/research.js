@@ -127,7 +127,7 @@ function Research() {
       conf: "NetMob 2023",
       place: " Universidad Carlos III de Madrid - Madrid - Spain",
       link: "https://netmob.org/",
-      pdf: "https://drive.google.com/file/d/1AdfWSh7RiI2WR16n8OCSRLU2oi7FPIvq/view?usp=sharing",
+      pdf: "https://drive.google.com/file/d/1MIAfjyQfaLOGQ3tImeJUqCJegIbyjk3U/view?usp=share_link",
     },
     {
       title: "Some statistical insights into PINNs",
@@ -135,7 +135,7 @@ function Research() {
       conf: "Foundations of Computational Mathematics 2023",
       place: "Sorbonne University - Paris - France",
       link: "https://focm2023.org/",
-      pdf: "https://drive.google.com/file/d/1lLlqYBM23qzh95ZPSKW1H9R53ULPUBN6/view?usp=sharing",
+      pdf: "https://drive.google.com/file/d/1U--WqgSOhi0RZefBJEQ4zNYUPOWRrhiU/view?usp=share_link",
     },
   ];
 

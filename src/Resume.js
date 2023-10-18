@@ -136,7 +136,7 @@ function Resume() {
       name: "PhD in Mathematics at Sorbonne Université",
       date: "2022 - 2025",
       description:
-        "Physics informed machine learning and time series forecasting",
+        "Physics-informed machine learning for time series forecasting in atypical periods",
       logo: "su.jpeg",
     },
     {
