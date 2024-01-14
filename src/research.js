@@ -54,6 +54,32 @@ function Research() {
   let talks = [
     {
       title: "Some statistical insight into PINNs",
+      date: "(2024),",
+      conf: "IDEFIX seminar",
+      place:
+        "Unit of Applied Mathematics (UMA) - ENSTA - Polytechnique Institute of Paris - Palaiseau - France",
+      link: "https://uma.ensta-paris.fr/idefix/",
+      pdf: "https://drive.google.com/file/d/1tlBAeNFTqQQUcxJ4-FksOCKR_xYvIA2Q/view?usp=sharing",
+    },
+    {
+      title: "Some statistical insight into PINNs",
+      date: "(2024),",
+      conf: "Weekly seminar of MIA",
+      place:
+        "Agro Campus Paris-Saclay - Paris-Saclay University - Paris - France",
+      link: "https://mia-ps.inrae.fr/seminaires-miaps",
+      pdf: "https://drive.google.com/file/d/1tlBAeNFTqQQUcxJ4-FksOCKR_xYvIA2Q/view?usp=sharing",
+    },
+    {
+      title:
+        "Physics-Informed Machine Learning and electricity-demand forecasting",
+      date: "(2024),",
+      conf: "Seminar of Paris Santé Campus",
+      place: "Laboratoire HeKA - Paris City University - Paris - France",
+      pdf: "https://drive.google.com/file/d/1tlBAeNFTqQQUcxJ4-FksOCKR_xYvIA2Q/view?usp=sharing",
+    },
+    {
+      title: "Some statistical insight into PINNs",
       date: "(2023),",
       conf: "Seminar of Modeling and Scientific computing",
       place:
