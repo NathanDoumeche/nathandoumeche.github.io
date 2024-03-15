@@ -7,6 +7,17 @@ var w = document.documentElement.clientWidth || window.innerWidth;
 function Research() {
   let articles = [
     {
+      title: "Physics-informed machine learning as a kernel method",
+      date: "2024",
+      authors: [
+        "Nathan Doumèche",
+        "Francis Bach",
+        "Gérard Biau",
+        "Claire Boyer",
+      ],
+      pdf: "https://arxiv.org/abs/2402.07514",
+    },
+    {
       title:
         "Human spatial dynamics for electricity demand forecasting: the case of France during the 2022 energy crisis",
       date: "2023",
@@ -52,6 +63,19 @@ function Research() {
   ];
 
   let talks = [
+    {
+      title: "On the convergence rate of PIML",
+      date: "(2024),",
+      conf: "Workshop on Hybrid Modelling in Earth and Environmental Sciences",
+      place: "Jena - Germany",
+    },
+    {
+      title: "Physics-informed machine learning and time series",
+      date: "(2024),",
+      conf: "Session ENBIS - 55ème Journées de Statistique de la SFdS ",
+      place: "University of Bordeaux - Bordeaux - France",
+      link: "https://jds2024.sciencesconf.org/",
+    },
     {
       title: "Some statistical insight into PINNs",
       date: "(2024),",
@@ -148,6 +172,14 @@ function Research() {
 
   let posters = [
     {
+      title: "On the convergence rate of Physics-Informed Machine Learning",
+      date: "(2024),",
+      conf: "Workshop: Latest Developments in Physics-Informed Machine Learning",
+      place: " Imperial College - London - UK",
+      link: "https://www.imperial.ac.uk/events/172489/workshop-latest-developments-in-physics-informed-machine-learning/",
+      pdf: "https://drive.google.com/file/d/1RqeNB1bLTz8ALYXG5XxPKx8UvBprhOMG/view?usp=sharing",
+    },
+    {
       title: "Human spatial dynamics for electricity demand forecasting",
       date: "(2023),",
       conf: "NetMob 2023",
@@ -180,7 +212,24 @@ function Research() {
     },
   ];
 
+  let students = [
+    {
+      name: "Guillhem Artis",
+      date: "March 2023 - October 2024,",
+      place: "Sorbonne University",
+      level: "Master 2 research internship",
+      topic: "Optimization of PINNs",
+      cosupervision: "Claire Boyer and Gérard Biau",
+    },
+  ];
+
   let activities = [
+    {
+      conf: "Reviewer for IEEE Transactions on Signal Processing",
+      date: "(2024)",
+      place: "",
+      level: "",
+    },
     {
       conf: "Reviewer for Biometrika",
       date: "(2023)",
@@ -239,6 +288,21 @@ function Research() {
           lienPdf={talk.pdf}
           lienConf={talk.link}
           key={talk.title}
+        />
+      ))}
+
+      <Title style={{ paddingTop: "0.5em", paddingBottom: "0.5em" }} order={1}>
+        Supervision
+      </Title>
+      {students.map((student) => (
+        <Supervision
+          name={student.name}
+          date={student.date}
+          level={student.level}
+          place={student.place}
+          topic={student.topic}
+          cosupervision={student.cosupervision}
+          key={student.title}
         />
       ))}
 
@@ -364,6 +428,23 @@ function Teaching(props) {
             <IconDownload size={30} />
           </a>
         ) : null}
+      </div>
+    </div>
+  );
+}
+
+function Supervision(props) {
+  return (
+    <div className="research-container">
+      <div className="research-left-side">
+        <div className="research-title">{props.name + " - " + props.level}</div>
+        <div className="research-date">
+          <i>{props.topic}</i>, {props.date}{" "}
+          {props.cosupervision
+            ? "cosupervised with " + props.cosupervision + ","
+            : null}{" "}
+          {props.place}
+        </div>
       </div>
     </div>
   );

@@ -77,13 +77,23 @@ function Resume() {
       steps: [
         {
           date: "march. 2022 - sept. 2022 (6 months)",
-          job: "Research Scientist trainee in machine learning",
+          job: "Research scientist trainee in machine learning",
           description: [],
         },
       ],
     },
     {
-      name: "French Ministry of the Ecological Transition",
+      name: "Sorbonne University",
+      job: "Teaching assistant",
+      date: "2023 - 2024",
+      logo: "su.jpeg",
+      description: [
+        "Teaching assistant for the third-year lecture of Mathematical foundations of Statistics (L3)",
+        "given by Assistant Professor Charlotte Dion-Blanc.",
+      ],
+    },
+    {
+      name: "French Ministry of Ecological Transition",
       job: "Internship in modelling the electricity sector",
       date: "oct. 2021 - march 2022 (5 months)",
       description: [
@@ -95,7 +105,7 @@ function Resume() {
       logo: "mte.jpeg",
     },
     {
-      name: "Sorbonne Université",
+      name: "Sorbonne University",
       job: "Research internship in Probability and Machine Learning",
       date: "april 2021 - aug. 2021 (4 months)",
       description: [
@@ -133,7 +143,7 @@ function Resume() {
 
   let formations = [
     {
-      name: "PhD in Mathematics at Sorbonne Université",
+      name: "PhD in Mathematics at Sorbonne University",
       date: "2022 - 2025",
       description:
         "Physics-informed machine learning for time series forecasting in atypical periods",
