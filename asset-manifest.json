@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.e2fb7875.css",
-    "main.js": "/static/js/main.d28df284.js",
+    "main.js": "/static/js/main.8d8d08c2.js",
     "static/js/27.f23d4800.chunk.js": "/static/js/27.f23d4800.chunk.js",
     "static/media/nathandoumeche.jpeg": "/static/media/nathandoumeche.b74670337d2409983638.jpeg",
     "index.html": "/index.html"
   },
   "entrypoints": [
     "static/css/main.e2fb7875.css",
-    "static/js/main.d28df284.js"
+    "static/js/main.8d8d08c2.js"
   ]
 }
