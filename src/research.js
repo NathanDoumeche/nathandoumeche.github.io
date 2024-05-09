@@ -64,6 +64,13 @@ function Research() {
 
   let talks = [
     {
+      title: "PIML as a kernel method",
+      date: "(2024),",
+      conf: "Machine Learning and Dynamical Systems Seminar",
+      place: "Alan Turing Institute - London - United Kingdom",
+      pdf: "https://drive.google.com/file/d/1YXF-udnjU7fsshJa8o8EM477iL5_-1SU/view?usp=sharing",
+    },
+    {
       title: "On the convergence rate of PIML",
       date: "(2024),",
       conf: "Workshop on Hybrid Modelling in Earth and Environmental Sciences",
