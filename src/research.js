@@ -7,7 +7,8 @@ var w = document.documentElement.clientWidth || window.innerWidth;
 function Research() {
   let articles = [
     {
-      title: "Physics-informed machine learning as a kernel method",
+      title:
+        "Physics-informed machine learning as a kernel method (to be published in COLT 2024)",
       date: "2024",
       authors: [
         "Nathan Doumèche",
@@ -66,9 +67,9 @@ function Research() {
     {
       title: "PIML as a kernel method",
       date: "(2024),",
-      conf: "Machine Learning and Dynamical Systems Seminar",
-      place: "Alan Turing Institute - London - United Kingdom",
-      pdf: "https://drive.google.com/file/d/1YXF-udnjU7fsshJa8o8EM477iL5_-1SU/view?usp=sharing",
+      conf: "Conference On Learning Theory (COLT 2024)",
+      place: "Edmonton - Canada",
+      link: "https://learningtheory.org/colt2024/",
     },
     {
       title: "On the convergence rate of PIML",
@@ -82,6 +83,14 @@ function Research() {
       conf: "Session ENBIS - 55ème Journées de Statistique de la SFdS ",
       place: "University of Bordeaux - Bordeaux - France",
       link: "https://jds2024.sciencesconf.org/",
+    },
+    {
+      title: "PIML as a kernel method",
+      date: "(2024),",
+      conf: "Machine Learning and Dynamical Systems Seminar",
+      place: "Alan Turing Institute - London - United Kingdom",
+      pdf: "https://drive.google.com/file/d/1YXF-udnjU7fsshJa8o8EM477iL5_-1SU/view?usp=sharing",
+      link: "https://www.turing.ac.uk/research/interest-groups/machine-learning-and-dynamical-systems",
     },
     {
       title: "Some statistical insight into PINNs",
@@ -222,11 +231,19 @@ function Research() {
   let students = [
     {
       name: "Guillhem Artis",
-      date: "March 2023 - October 2024,",
+      date: "March 2024 - October 2024,",
       place: "Sorbonne University",
       level: "Master 2 research internship",
       topic: "Optimization of PINNs",
       cosupervision: "Claire Boyer and Gérard Biau",
+    },
+    {
+      name: "Eloi Bedek",
+      date: "May 2024 - December 2024,",
+      place: "EDF Lab",
+      level: "3rd-year ENSTA internship",
+      topic: "Using remote working data for electricity load forecasting",
+      cosupervision: "Yannig Goude and Stefania Rubrichi",
     },
   ];
 
