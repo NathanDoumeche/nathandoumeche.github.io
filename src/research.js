@@ -5,36 +5,11 @@ import { SiGithub } from "react-icons/si";
 var w = document.documentElement.clientWidth || window.innerWidth;
 
 function Research() {
-  let articles = [
+  let articlesPublished = [
     {
       title:
-        "Physics-informed machine learning as a kernel method (to be published in COLT 2024)",
+        "Forecasting Electric Vehicle Charging Station Occupancy: Smarter Mobility Data Challenge (DMLR)",
       date: "2024",
-      authors: [
-        "Nathan Doumèche",
-        "Francis Bach",
-        "Gérard Biau",
-        "Claire Boyer",
-      ],
-      pdf: "https://arxiv.org/abs/2402.07514",
-    },
-    {
-      title:
-        "Human spatial dynamics for electricity demand forecasting: the case of France during the 2022 energy crisis",
-      date: "2023",
-      authors: [
-        "Nathan Doumèche",
-        "Yann Allioux",
-        "Yannig Goude",
-        "Stefania Rubrichi",
-      ],
-      pdf: "https://arxiv.org/abs/2309.16238",
-      github: "https://github.com/NathanDoumeche/Mobility_data_assimilation",
-    },
-    {
-      title:
-        "Forecasting Electric Vehicle Charging Station Occupancy: Smarter Mobility Data Challenge",
-      date: "2023",
       authors: [
         "Yvenn Amara-Ouali",
         "Yannig Goude",
@@ -50,16 +25,45 @@ function Research() {
         "Sébastien Treguer",
         "Tiphaine Phe-Neau",
       ],
-      pdf: "https://arxiv.org/abs/2306.06142",
+      pdf: "https://data.mlr.press/volumes/01",
       github: "https://github.com/NathanDoumeche/Smart_mobility_challenge",
     },
+
     {
-      title: "Convergence and error analysis of PINNs",
-      date: "2023",
+      title: "On the convergence of PINNs (to appear in Bernoulli)",
+      date: "2024",
       authors: ["Nathan Doumèche", "Gérard Biau", "Claire Boyer"],
       pdf: "https://arxiv.org/abs/2305.01240",
       github:
         "https://github.com/NathanDoumeche/Convergence_and_error_analysis_of_PINNs",
+    },
+    {
+      title: "Physics-informed machine learning as a kernel method (COLT 2024)",
+      date: "2024",
+      authors: [
+        "Nathan Doumèche",
+        "Francis Bach",
+        "Gérard Biau",
+        "Claire Boyer",
+      ],
+      pdf: "https://proceedings.mlr.press/v247/doumeche24a",
+      github: "https://github.com/NathanDoumeche/PIML_as_a_kernel_method",
+    },
+  ];
+
+  let articles = [
+    {
+      title:
+        "Human spatial dynamics for electricity demand forecasting: the case of France during the 2022 energy crisis",
+      date: "2023",
+      authors: [
+        "Nathan Doumèche",
+        "Yann Allioux",
+        "Yannig Goude",
+        "Stefania Rubrichi",
+      ],
+      pdf: "https://arxiv.org/abs/2309.16238",
+      github: "https://github.com/NathanDoumeche/Mobility_data_assimilation",
     },
   ];
 
@@ -239,7 +243,7 @@ function Research() {
     },
     {
       name: "Eloi Bedek",
-      date: "May 2024 - December 2024,",
+      date: "May 2024 - Febuary 2025,",
       place: "EDF Lab",
       level: "3rd-year ENSTA internship",
       topic: "Using remote working data for electricity load forecasting",
@@ -249,7 +253,7 @@ function Research() {
 
   let activities = [
     {
-      conf: "Reviewer for IEEE Transactions on Signal Processing",
+      conf: "Reviewer for IEEE Transactions on Signal Processing, JASA, and Annals of Statistics",
       date: "(2024)",
       place: "",
       level: "",
@@ -271,6 +275,19 @@ function Research() {
   ];
   return (
     <div className="research">
+      <Title style={{ paddingBottom: "1em" }} order={1}>
+        Published articles
+      </Title>
+      {articlesPublished.map((article) => (
+        <Article
+          title={article.title}
+          date={article.date}
+          authors={article.authors}
+          lienPdf={article.pdf}
+          lienGithub={article.github}
+          key={article.title}
+        />
+      ))}
       <Title style={{ paddingBottom: "1em" }} order={1}>
         Preprints
       </Title>
