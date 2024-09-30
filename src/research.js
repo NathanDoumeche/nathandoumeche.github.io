@@ -53,6 +53,19 @@ function Research() {
 
   let articles = [
     {
+      title: "Physics-informed kernel learning",
+      date: "2024",
+      authors: [
+        "Nathan Doumèche",
+        "Francis Bach",
+        "Gérard Biau",
+        "Claire Boyer",
+      ],
+      pdf: "https://arxiv.org/abs/2409.13786",
+      github: "https://github.com/NathanDoumeche/numerical_PIML_kernel",
+    },
+
+    {
       title:
         "Human spatial dynamics for electricity demand forecasting: the case of France during the 2022 energy crisis",
       date: "2023",
@@ -68,6 +81,13 @@ function Research() {
   ];
 
   let talks = [
+    {
+      title: "Statistical insights into physics-informed machine learning",
+      date: "(2024),",
+      conf: "MILES (Dauphine-PSL) seminar",
+      place: "Paris Dauphine-PSL University - Paris - France",
+      link: "https://www.lamsade.dauphine.fr/wp/miles/",
+    },
     {
       title: "PIML as a kernel method",
       date: "(2024),",
