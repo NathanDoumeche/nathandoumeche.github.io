@@ -17,7 +17,7 @@
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "http://nathandoumeche.com",
+  "homepage": "https://nathandoumeche.com",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
@@ -45,7 +45,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0",
+    "gh-pages": "^6.3.0",
     "react-router-dom": "^6.8.1"
   }
 }

@@ -20,8 +20,8 @@ function Bio() {
           Nathan Doumèche
         </Title>
         <div className="bio-paragraph">
-          Hello and welcome to my personal website! Here you can find out more
-          about my research and my background. I am currently a PhD student in
+          Welcome to my personal website! Here you can find out more about my
+          research and my background. I am currently a PhD student in
           Mathematics under the supervision of{" "}
           <a
             target="_blank"
