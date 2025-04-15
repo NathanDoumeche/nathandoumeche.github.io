@@ -39,7 +39,7 @@ function Bio() {
             Claire Boyer
           </a>{" "}
           at Sorbonne University. In parallel, I am working at EDF Lab Paris
-          Saclay with Yann Allioux, Sandra Claudel, and{" "}
+          Saclay with{" "}
           <a
             target="blank"
             href="https://www.imo.universite-paris-saclay.fr/~yannig.goude/about.html"
@@ -70,10 +70,9 @@ function Bio() {
           of physics modelling.
         </div>
         <div className="bio-paragraph" style={{ paddingTop: "1em" }}>
-          In collaboration with Yann Allioux, Sandra Claudel, and Yannig Goude,
-          I work on forecasting the French electricity demand, which helps EDF
-          produce electricity at the right time and to act efficiently on the
-          energy markets.
+          In collaboration with Yannig Goude, I work on forecasting the French
+          electricity demand, which helps EDF produce electricity at the right
+          time and to act efficiently on the energy markets.
         </div>
         <Title
           style={{ paddingTop: "0.5em", paddingBottom: "0.5em" }}

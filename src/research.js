@@ -7,6 +7,14 @@ var w = document.documentElement.clientWidth || window.innerWidth;
 function Research() {
   let articlesPublished = [
     {
+      title: "On the convergence of PINNs (Bernoulli)",
+      date: "2025",
+      authors: ["Nathan Doumèche", "Gérard Biau", "Claire Boyer"],
+      pdf: "https://arxiv.org/abs/2305.01240",
+      github:
+        "https://github.com/NathanDoumeche/Convergence_and_error_analysis_of_PINNs",
+    },
+    {
       title:
         "Forecasting Electric Vehicle Charging Station Occupancy: Smarter Mobility Data Challenge (DMLR)",
       date: "2024",
@@ -28,15 +36,6 @@ function Research() {
       pdf: "https://data.mlr.press/volumes/01",
       github: "https://github.com/NathanDoumeche/Smart_mobility_challenge",
     },
-
-    {
-      title: "On the convergence of PINNs (to appear in Bernoulli)",
-      date: "2024",
-      authors: ["Nathan Doumèche", "Gérard Biau", "Claire Boyer"],
-      pdf: "https://arxiv.org/abs/2305.01240",
-      github:
-        "https://github.com/NathanDoumeche/Convergence_and_error_analysis_of_PINNs",
-    },
     {
       title: "Physics-informed machine learning as a kernel method (COLT 2024)",
       date: "2024",
@@ -52,6 +51,20 @@ function Research() {
   ];
 
   let articles = [
+    {
+      title: "Forecasting time series with constraints",
+      date: "2025",
+      authors: [
+        "Nathan Doumèche",
+        "Francis Bach",
+        "Eloi Bedek",
+        "Gérard Biau",
+        "Claire Boyer",
+        "Yannig Goude",
+      ],
+      pdf: "https://arxiv.org/abs/2502.10485",
+      github: "https://github.com/NathanDoumeche/WeaKL",
+    },
     {
       title: "Physics-informed kernel learning",
       date: "2024",
@@ -81,6 +94,42 @@ function Research() {
   ];
 
   let talks = [
+    {
+      title: "A statistical tour of physics-informed machine learning",
+      date: "(2025),",
+      conf: "Summer school: Mathematical foundations of data science",
+      place: "Montreal University - Montreal - Canada",
+      link: "https://www.crmath.ca/en/activities/#/type/activity/id/3993",
+    },
+    {
+      title: "Prévision de séries temporelles sous contraintes linéaires",
+      date: "(2025),",
+      conf: "56ème journées de statistiques de la SFdS",
+      place: "Université Aix-Marseille - Marseille - France",
+      link: "https://jds2025.sciencesconf.org/",
+    },
+    {
+      title: "Efficient learning with physical priors",
+      date: "(2025),",
+      conf: "CELESTE seminar",
+      place: "LMO - Orsay - France",
+      link: "https://www.inria.fr/en/celeste",
+    },
+    {
+      title: "Efficient learning with physical priors",
+      date: "(2025),",
+      conf: "Séminaire parisien de statistique",
+      place: "Institut Henri Poincaré - Paris - France",
+      link: "https://sites.google.com/site/semstats/ann%C3%A9e-2024-2025/s%C3%A9ance-du-10-f%C3%A9vrier-2025?pli=1",
+    },
+    {
+      title: "Physics-informed machine learning as a kernel method",
+      date: "(2024),",
+      conf: "Combining AI and physical modeling for contemporary simulations",
+      place:
+        "CECAM - École Polytechnique Fédérale de Lausanne - Lausanne - Switzerland",
+      link: "https://www.cecam.org/workshop-details/combining-ai-and-physical-modeling-for-contemporary-simulations-1364",
+    },
     {
       title: "Statistical insights into physics-informed machine learning",
       date: "(2024),",
@@ -263,7 +312,7 @@ function Research() {
     },
     {
       name: "Eloi Bedek",
-      date: "May 2024 - Febuary 2025,",
+      date: "May 2024 - March 2025,",
       place: "EDF Lab",
       level: "3rd-year ENSTA internship",
       topic: "Using remote working data for electricity load forecasting",

@@ -66,7 +66,7 @@ function Resume() {
     {
       name: "EDF R&D",
       job: "Research scientist in machine learning",
-      date: "sept. 2022 - dec. 2025",
+      date: "sept. 2022 - sept. 2025",
       logo: "edf.png",
       description: [
         "Research and development of forecasting algorithms for the French electricity demand.",
