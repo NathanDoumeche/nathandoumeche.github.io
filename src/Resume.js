@@ -64,6 +64,15 @@ var w = document.documentElement.clientWidth || window.innerWidth;
 function Resume() {
   let experiences = [
     {
+      name: "Citadel",
+      job: "Quantitative researcher (Power analyst)",
+      date: "sept. 2025 - now",
+      logo: "citadel_llc_logo.jpeg",
+      description: [
+        "Modelling the European power market.",
+      ],
+    },
+    {
       name: "EDF R&D",
       job: "Research scientist in machine learning",
       date: "sept. 2022 - sept. 2025",

@@ -7,6 +7,43 @@ var w = document.documentElement.clientWidth || window.innerWidth;
 function Research() {
   let articlesPublished = [
     {
+      title: "Fast kernel methods: Sobolev, physics-informed, and additive models (ICML)",
+      date: "2026",
+      authors: [
+        "Nathan Doumèche",
+        "Francis Bach",
+        "Gérard Biau",
+        "Claire Boyer",
+      ],
+      pdf: "https://arxiv.org/pdf/2509.02649?",
+      github: "https://github.com/NathanDoumeche/fast-kernel",
+    },
+    {
+      title:
+        "Human spatial dynamics for electricity demand forecasting (IEEE Transactions on Power Systems)",
+      date: "2026",
+      authors: [
+        "Nathan Doumèche",
+        "Yann Allioux",
+        "Yannig Goude",
+        "Stefania Rubrichi",
+      ],
+      pdf: "https://arxiv.org/abs/2309.16238",
+      github: "https://github.com/NathanDoumeche/Mobility_data_assimilation",
+    },
+    {
+      title: "Physics-informed kernel learning (Journal of Machine Learning Research)",
+      date: "2025",
+      authors: [
+        "Nathan Doumèche",
+        "Francis Bach",
+        "Gérard Biau",
+        "Claire Boyer",
+      ],
+      pdf: "https://www.jmlr.org/papers/volume26/24-1536/24-1536.pdf",
+      github: "https://github.com/NathanDoumeche/numerical_PIML_kernel",
+    },
+    {
       title: "On the convergence of PINNs (Bernoulli)",
       date: "2025",
       authors: ["Nathan Doumèche", "Gérard Biau", "Claire Boyer"],
@@ -16,7 +53,7 @@ function Research() {
     },
     {
       title:
-        "Forecasting Electric Vehicle Charging Station Occupancy: Smarter Mobility Data Challenge (DMLR)",
+        "Forecasting Electric Vehicle Charging Station Occupancy: Smarter Mobility Data Challenge (Journal of Data-centric Machine Learning Research)",
       date: "2024",
       authors: [
         "Yvenn Amara-Ouali",
@@ -37,7 +74,7 @@ function Research() {
       github: "https://github.com/NathanDoumeche/Smart_mobility_challenge",
     },
     {
-      title: "Physics-informed machine learning as a kernel method (COLT 2024)",
+      title: "Physics-informed machine learning as a kernel method (COLT)",
       date: "2024",
       authors: [
         "Nathan Doumèche",
@@ -65,32 +102,7 @@ function Research() {
       pdf: "https://arxiv.org/abs/2502.10485",
       github: "https://github.com/NathanDoumeche/WeaKL",
     },
-    {
-      title: "Physics-informed kernel learning",
-      date: "2024",
-      authors: [
-        "Nathan Doumèche",
-        "Francis Bach",
-        "Gérard Biau",
-        "Claire Boyer",
-      ],
-      pdf: "https://arxiv.org/abs/2409.13786",
-      github: "https://github.com/NathanDoumeche/numerical_PIML_kernel",
-    },
 
-    {
-      title:
-        "Human spatial dynamics for electricity demand forecasting: the case of France during the 2022 energy crisis",
-      date: "2023",
-      authors: [
-        "Nathan Doumèche",
-        "Yann Allioux",
-        "Yannig Goude",
-        "Stefania Rubrichi",
-      ],
-      pdf: "https://arxiv.org/abs/2309.16238",
-      github: "https://github.com/NathanDoumeche/Mobility_data_assimilation",
-    },
   ];
 
   let talks = [
@@ -322,6 +334,11 @@ function Research() {
 
   let activities = [
     {
+      conf: "Reviewer for Neurocomputing, IEEE Transactions on Industrial Informatics, and ICML (silver reviewer)",
+      date: "(2026)",
+      place: "",
+      level: "",
+    },{
       conf: "Reviewer for IEEE Transactions on Signal Processing, JASA, and Annals of Statistics",
       date: "(2024)",
       place: "",
@@ -357,7 +374,7 @@ function Research() {
           key={article.title}
         />
       ))}
-      <Title style={{ paddingBottom: "1em" }} order={1}>
+      <Title style={{ paddingTop: "0.5em", paddingBottom: "1em" }} order={1}>
         Preprints
       </Title>
       {articles.map((article) => (

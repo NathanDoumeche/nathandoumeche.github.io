@@ -7,6 +7,14 @@ var w = document.documentElement.clientWidth || window.innerWidth;
 function Awards() {
   let awards = [
     {
+      name: "PhD prize from the French Association for Artificial Intelligence (AFIA)",
+      linkName: "https://afia.asso.fr/le-prix-de-these-afia/",
+      date: "2026",
+      rank: "Accessit",
+      description:
+        "AFIA's Artificial Intelligence Thesis Prize aims at promoting and recognizing the best research work by young French researchers in the field.",
+    },
+    {
       name: "Smarter Mobility Data Challenge",
       linkName: "https://codalab.lisn.upsaclay.fr/competitions/7192",
       date: "2022",

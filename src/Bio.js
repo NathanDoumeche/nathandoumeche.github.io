@@ -11,7 +11,6 @@ import { Title } from "@mantine/core";
 function Bio() {
   return (
     <div className="bio">
-      <img src={Photo} alt="Nathan Doumeche photo" className="image" />
       <div className="bio__content">
         <Title
           style={{ paddingTop: "0.5em", paddingBottom: "0.5em" }}
@@ -19,10 +18,19 @@ function Bio() {
         >
           Nathan Doumèche
         </Title>
+        <img src={Photo} alt="Nathan Doumeche photo" className="image" />
+      
+
+          <Title
+          style={{ paddingTop: "1em", paddingBottom: "0.5em" }}
+          order={1}
+        >
+          Short bio
+        </Title>
+
         <div className="bio-paragraph">
-          Welcome to my personal website! Here you can find out more about my
-          research and my background. I am currently a PhD student in
-          Mathematics under the supervision of{" "}
+          I am currently a quantitative researcher at Citadel in London.
+          Prior to that, I was a PhD student in Mathematics at Sorbonne University in Paris, under the supervision of{" "}
           <a
             target="_blank"
             href="https://perso.lpsm.paris/~biau/"
@@ -30,24 +38,24 @@ function Bio() {
           >
             Gérard Biau
           </a>{" "}
-          and{" "}
+          (Professor at Sorbonne University and member of the French Academy of Sciences) and{" "}
           <a
             target="_blank"
             href="https://perso.lpsm.paris/~cboyer/"
             aria-label="Claire Boyer webpage"
           >
-            Claire Boyer
+            Claire Boyer 
           </a>{" "}
-          at Sorbonne University. In parallel, I am working at EDF Lab Paris
+          (Professor at Paris-Saclay University), while working in parallel as a research scientist at EDF Lab Paris
           Saclay with{" "}
           <a
             target="blank"
             href="https://www.imo.universite-paris-saclay.fr/~yannig.goude/about.html"
             aria-label="Yannig Goude webpage"
           >
-            Yannig Goude
-          </a>
-          .
+            Yannig Goude  
+          </a>{" "}
+           (Senior Researcher Statistical Learning).
         </div>
         <Title
           style={{ paddingTop: "0.5em", paddingBottom: "0.5em" }}
@@ -56,23 +64,19 @@ function Bio() {
           Research areas
         </Title>
         <div className="bio-paragraph">
-          Passionate about the connections between theory and practice in
-          science, my research focuses on both the theoretical foundations of
-          machine learning and their applications to the energy sector. The aim
-          is to improve our understanding of how artificial intelligence works
-          so that we can make better use of it in our everyday life.
+          On the applied side, I specialize in applying mathematical methods to energy forecasting and energy markets. 
+          On the theoretical side, I have worked on physics-informed neural networks, fast kernel methods, generalized additive models, adaptive time series forecasting, and hierarchical forecasting. 
         </div>
         <div className="bio-paragraph" style={{ paddingTop: "1em" }}>
-          Together with Gérard Biau and Claire Boyer, I study the theoretical
-          properties of physics-informed neural networks (PINNs). These
-          algorithms are very promessing because they combine the powerful
-          data-driven techniques of machine learning with the interpretability
-          of physics modelling.
-        </div>
-        <div className="bio-paragraph" style={{ paddingTop: "1em" }}>
-          In collaboration with Yannig Goude, I work on forecasting the French
+          In collaboration with Yannig Goude, I worked on forecasting the French
           electricity demand, which helps EDF produce electricity at the right
-          time and to act efficiently on the energy markets.
+          time and to act efficiently on the energy markets. 
+          At Citadel, I currently work on modelling prices on the European power market.
+        </div>
+        <div className="bio-paragraph" style={{ paddingTop: "1em" }}>
+          Together with Gérard Biau, Claire Boyer, and Francis Bach, I study the theoretical
+          properties of physics-informed machine learning (PIML). 
+          The goal is to improve the accuracy and reliability of statistical learning methods by incorporating physical knowledge of the underlying phenomena, and to provide theoretical guarantees on the performance of these methods.
         </div>
         <Title
           style={{ paddingTop: "0.5em", paddingBottom: "0.5em" }}
@@ -84,7 +88,8 @@ function Bio() {
         <a href="mailto: nathan.doumeche@gmail.com" className="details-value">
           nathan.doumeche@gmail.com
         </a>
-        .
+        .           Due to the reglemented status of my current job, I am unfortunately unable to speak at conferences and seminars.
+
         <div className="app-logos">
           <a
             className="app-logo"
